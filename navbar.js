@@ -11,17 +11,26 @@
 // just toggle the class
 // in css give the extra class that sets it to one
 
-
+// query the nav bar
 let navbar = document.querySelector('.the_nav');
+
+// set a last scroll
+let lastScroll = 0;
 
 console.log(navbar);
 
 window.addEventListener('scroll', function () {
-    // set the window scroll to y
-    if (window.scrollY >= 20) {
+    // set a current scroll
+    let currentScroll = window.scrollY; 
+    // compare current scroll to last scroll
+        // then compare to greater than zero
+    if (currentScroll - lastScroll > 0) {
         navbar.classList.add('dissapear');
         console.log("You are Scrolling Down");
-    } else if (window.scrollY ) {
-        navbar.classList.remove('dissapear');
+    } else {
+        // scrolled up -- navbar show
+        // navbar.classList.add("scroll-up");
+        navbar.classList.remove("dissapear");
     }
+    lastScroll = currentScroll;
 });

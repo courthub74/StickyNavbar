@@ -4,53 +4,54 @@
 * .container {
   margin: 0;
 }
-* .container .section_one {
-  background-color: #080E2F;
-  height: 100vh;
-}
-* .container .section_one .the_nav {
+* .container .the_nav {
   display: flex;
-  justify-content: space-between;
   background-color: #080E2F;
-  height: 15vh;
+  height: 12vh;
   position: sticky;
   top: 0;
   transition: 0.5s ease-in-out;
+  width: 100%;
 }
-* .container .section_one .the_nav .nav_contents {
+* .container .the_nav .nav_contents {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20vw;
+  gap: 10vw;
   padding: 0 0 0 5vw;
+  margin: 0 0 0 2vw;
 }
-* .container .section_one .the_nav .nav_contents #coudevs_logo {
-  width: 15vw;
-  height: 15vw;
+* .container .the_nav .nav_contents #coudevs_logo {
+  width: 20vw;
+  height: 20vw;
 }
-* .container .section_one .the_nav .nav_contents .you {
+* .container .the_nav .nav_contents .you {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-* .container .section_one .the_nav .nav_contents .you #name {
+* .container .the_nav .nav_contents .you #name {
   color: white;
   font-size: 4vw;
 }
-* .container .section_one .the_nav .nav_contents .you #job_description {
+* .container .the_nav .nav_contents .you #job_description {
   color: rgb(115, 97, 149);
-  font-size: 2vw;
+  font-size: 3vw;
 }
-* .container .section_one .the_nav .nav_contents #menu {
+* .container .the_nav .nav_contents #menu {
   width: 10vw;
   height: 10vw;
 }
-* .container .section_one .the_nav.scroll_down {
-  background-color: #080E2F;
-}
-* .container .section_one .the_nav.dissapear {
+* .container .the_nav.dissapear {
   opacity: 0;
   transition: 0.5s ease-in-out;
+}
+* .container .the_nav.scroll_up {
+  opacity: 1;
+}
+* .container .section_one {
+  background-color: #080E2F;
+  height: 100vh;
 }
 * .container .section_one .section_one_content {
   display: flex;
@@ -66,7 +67,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: darkgrey;
+  background-color: #146166;
   height: 100vh;
 }
 * .container .section_two h1 {
@@ -77,7 +78,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: darkgreen;
+  background-color: #080E2F;
   height: 100vh;
 }
 * .container .section_three h1 {
@@ -88,7 +89,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: darkred;
+  background-color: #146166;
   height: 100vh;
 }
 * .container .section_four h1 {

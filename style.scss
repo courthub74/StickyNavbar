@@ -1,0 +1,108 @@
+// Colors
+$darkblue: #080E2F;
+$darkred: darkred;
+$darkgreen: darkgreen;
+$darkgrey: darkgrey;
+
+
+* {
+    margin: 0;
+    .container {
+        margin: 0;
+        .section_one {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            background-color: $darkblue;
+            height: 100vh;
+            .the_nav {
+                display: flex;
+                justify-content: space-between;
+                background-color: $darkblue;
+                height: 15vh;
+                position: sticky;
+                top: 0;
+                transition: .5s ease-in-out;
+                .nav_contents {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20vw;
+                    padding: 0 0 0 5vw;
+                    #coudevs_logo {
+                        width: 15vw;
+                        height: 15vw;
+                    }
+                    .you {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        #name {
+                            color: white;
+                            font-size: 4vw;
+                        }
+                        #job_description {
+                            color: rgb(115, 97, 149);
+                            font-size: 2vw;
+                        }
+                    }
+                    #menu {
+                        width: 10vw;
+                        height: 10vw;
+                    }
+                }
+            }
+            .the_nav.scroll_down {
+               background-color: $darkblue;
+            }
+            .the_nav.dissapear {
+                opacity: 0;
+                transition: .5s ease-in-out;
+            }
+            .section_one_content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                h1 {
+                    color: $darkgrey;
+                    font-size: 6vw;
+                }
+            }
+        }
+        .section_two {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $darkgrey;
+            height: 100vh;
+            h1 {
+                color: $darkblue;
+                font-size: 6vw;
+            }
+        }
+        .section_three {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $darkgreen;
+            height: 100vh;
+            h1 {
+                color: $darkgrey;
+                font-size: 6vw;
+            }
+        }
+        .section_four {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $darkred;
+            height: 100vh;
+            h1 {
+                color: $darkblue;
+                font-size: 6vw;
+            }
+        }
+    }
+}

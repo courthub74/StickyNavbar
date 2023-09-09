@@ -1,3 +1,49 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap');
+// COLORS
+$mainblue: #080E2F;
+$skillswhite: #FFFFFF;
+$aboutgreen: #0E4946;
+$skillsteal: #146166;
+$iconblock: #023430;
+$languagewhite: #d9e2e2;
+$techcirclegreen: #05607D;
+$hoverfonts: #B7BCD6;
+$experiencegreen: #255C5A;
+$positioncolor: #8081AA;
+
+// BUTTON COLORS
+$learnmorebutton: #EBEBEB;
+$experiencegreenbutton: #476D6B;
+$resumebutton: #507E81;
+
+
+// DISPLAY SQAURES COLORS
+$portfolios: #36395D;
+$experiences: #496b69;
+$experiencestwo: #476D6B;
+$abouts: #627C7A;
+$skillses: #7FC4C9;
+$skillsdarker: #669EA3;
+$skillsdarker2: #507e81;
+
+// BOX SHADOW
+$boxshadowcircles: rgba(0, 0, 0, 0.521);
+
+// CIRCLE OUTLINE
+$circleoutlines: rgb(221,221,221,0.52);
+
+// FOOTER
+$firstblue: #58a6ff;
+$secondblue: #6287cf;
+$thirdblue: rgb(85, 85, 255);
+$smallsgrey: #757782;
+
+// SOCIALS
+$socialsgrey: #B7BCD6;
+
+$lighterskills: #080e31;
+
 // Colors
 $darkblue: #080E2F;
 $skillsteal: #146166;
@@ -23,9 +69,9 @@ $darkgrey: darkgrey;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 10vw;
+                gap: 6vw;
                 padding: 0 0 0 5vw;
-                margin: 0 0 0 2vw;
+                margin: 0vh 0 0 0;
                 #coudevs_logo {
                     width: 20vw;
                     height: 20vw;
@@ -34,18 +80,22 @@ $darkgrey: darkgrey;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    margin: 0 0 0 -1vw;
                     #name {
                         color: white;
-                        font-size: 4vw;
+                        font-size: 5vw;
+                        font-family: 'Inter', sans-serif;
                     }
                     #job_description {
                         color: rgb(115, 97, 149);
-                        font-size: 3vw;
+                        font-size: 4vw;
+                        font-family: 'Roboto', sans-serif;
                     }
                 }
                 #menu {
                     width: 10vw;
                     height: 10vw;
+                    margin: 0 0 0 3vw;
                 }
             }
         }

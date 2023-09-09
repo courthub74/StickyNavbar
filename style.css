@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap");
 * {
   margin: 0;
 }
@@ -17,9 +18,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10vw;
+  gap: 6vw;
   padding: 0 0 0 5vw;
-  margin: 0 0 0 2vw;
+  margin: 0vh 0 0 0;
 }
 * .container .the_nav .nav_contents #coudevs_logo {
   width: 20vw;
@@ -29,18 +30,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 0 0 -1vw;
 }
 * .container .the_nav .nav_contents .you #name {
   color: white;
-  font-size: 4vw;
+  font-size: 5vw;
+  font-family: "Inter", sans-serif;
 }
 * .container .the_nav .nav_contents .you #job_description {
   color: rgb(115, 97, 149);
-  font-size: 3vw;
+  font-size: 4vw;
+  font-family: "Roboto", sans-serif;
 }
 * .container .the_nav .nav_contents #menu {
   width: 10vw;
   height: 10vw;
+  margin: 0 0 0 3vw;
 }
 * .container .the_nav.dissapear {
   opacity: 0;

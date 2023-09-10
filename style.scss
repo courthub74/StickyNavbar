@@ -78,10 +78,14 @@ $darkgrey: darkgrey;
                     height: 20vw;
                 }
                 .you {
+                    opacity: 0;
+                }
+                .you.on_scroll_up {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     margin: 0 0 0 -1vw;
+                    opacity: 1;
                     #name {
                         color: white;
                         font-size: 5vw;

@@ -19,6 +19,15 @@ let lastScroll = 0;
 
 console.log(navbar);
 
+// The 2 NavBars
+
+// query the words 
+
+// set css class to opacity 0
+// when scroll up to opacity 1 
+
+let your_name = document.querySelector('.you');
+
 window.addEventListener('scroll', function () {
     // set a current scroll
     let currentScroll = window.scrollY; 
@@ -31,6 +40,12 @@ window.addEventListener('scroll', function () {
         // scrolled up -- navbar show
         // navbar.classList.add("scroll-up");
         navbar.classList.remove("dissapear");
-    }
+        // also change the .you class
+            // make it appear
+        your_name.classList.add('on_scroll_up');
+    } 
+    // NOW make the words dissapear
     lastScroll = currentScroll;
 });
+
+

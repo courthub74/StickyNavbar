@@ -10,6 +10,7 @@
   background-color: #080E2F;
   height: 12vh;
   position: sticky;
+  z-index: 98;
   top: 0;
   transition: 0.5s ease-in-out;
   width: 100%;
@@ -38,7 +39,7 @@
   font-family: "Inter", sans-serif;
 }
 * .container .the_nav .nav_contents .you #job_description {
-  color: rgb(115, 97, 149);
+  color: #8081AA;
   font-size: 4vw;
   font-family: "Roboto", sans-serif;
 }
@@ -49,24 +50,78 @@
 }
 * .container .the_nav.dissapear {
   opacity: 0;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 * .container .the_nav.scroll_up {
   opacity: 1;
 }
 * .container .section_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #080E2F;
   height: 100vh;
 }
-* .container .section_one .section_one_content {
+* .container .section_one .section_one_headshot {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: -15vh 0 0 0;
+}
+* .container .section_one .section_one_headshot #home_headshot {
+  width: 55vw;
+  height: 55vw;
+  border-radius: 50%;
+  position: absolute;
+}
+* .container .section_one .section_one_headshot .back_circle {
+  width: 60vw;
+  height: 60vw;
+  border: 7px solid #8081AA;
+  border-radius: 50%;
+}
+* .container .section_one .section_one_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh 0 0 0;
 }
 * .container .section_one .section_one_content h1 {
-  color: darkgrey;
-  font-size: 6vw;
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 7vw;
+}
+* .container .section_one .section_one_content p {
+  font-family: "Roboto", sans-serif;
+  color: #8081AA;
+  font-size: 5vw;
+}
+* .container .section_one .section_one_content .my_mantra {
+  display: flex;
+  margin: 10vh 0 0 0;
+}
+* .container .section_one .section_one_content .my_mantra p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  text-align: center;
+}
+* .container .section_one .section_one_content .learn_more {
+  width: 50vw;
+  height: 10vw;
+  margin: 12vh 0 0 0;
+  border-radius: 40px;
+  background-color: #36395D;
+  border: none;
+}
+* .container .section_one .section_one_content .learn_more a {
+  color: #d9e2e2;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
 }
 * .container .section_two {
   display: flex;

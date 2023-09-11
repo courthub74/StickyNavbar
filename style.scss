@@ -56,6 +56,21 @@ $darkgrey: darkgrey;
     margin: 0;
     .container {
         margin: 0;
+        .nav_top_contents {
+            background-color: $darkblue;
+            display: flex;
+            justify-content: space-between;
+            #courdevs_top_logo {
+                width: 28vw;
+                height: 28vw;
+                margin: 0 0 0 1vw;
+            }
+            #top_hamburger {
+                width: 10vw;
+                height: 10vw;
+                margin: 4vh 4vw 0 0;
+            }
+        }
         .the_nav {
             display: flex;
             // justify-content: space-between;

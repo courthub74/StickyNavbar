@@ -5,6 +5,21 @@
 * .container {
   margin: 0;
 }
+* .container .nav_top_contents {
+  background-color: #080E2F;
+  display: flex;
+  justify-content: space-between;
+}
+* .container .nav_top_contents #courdevs_top_logo {
+  width: 28vw;
+  height: 28vw;
+  margin: 0 0 0 1vw;
+}
+* .container .nav_top_contents #top_hamburger {
+  width: 10vw;
+  height: 10vw;
+  margin: 4vh 4vw 0 0;
+}
 * .container .the_nav {
   display: flex;
   background-color: #080E2F;

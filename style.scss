@@ -56,6 +56,7 @@ $darkgrey: darkgrey;
     margin: 0;
     .container {
         margin: 0;
+        // Top NavBar that is static
         .nav_top_contents {
             background-color: $darkblue;
             display: flex;
@@ -68,9 +69,10 @@ $darkgrey: darkgrey;
             #top_hamburger {
                 width: 10vw;
                 height: 10vw;
-                margin: 4vh 4vw 0 0;
+                margin: 4vh 8vw 0 0;
             }
         }
+        // The Bottom Floating NavBar
         .the_nav {
             display: flex;
             // justify-content: space-between;
@@ -93,7 +95,26 @@ $darkgrey: darkgrey;
                     height: 20vw;
                 }
                 .you {
-                    opacity: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0 0 0 -1vw;
+                    opacity: 1;
+                    #name {
+                        color: white;
+                        font-size: 5vw;
+                        font-family: 'Inter', sans-serif;
+                    }
+                    #job_description {
+                        color: $positioncolor;
+                        font-size: 4vw;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                }
+                #menu {
+                    width: 10vw;
+                    height: 10vw;
+                    margin: 0 0 0 3vw;
                 }
                 .you.on_scroll_up {
                     display: flex;

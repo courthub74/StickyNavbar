@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+* .boxes {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .boxes .front_box {
+  background-color: darkolivegreen;
+  height: 20vw;
+  width: 20vw;
+  position: absolute;
+  z-index: 5;
+}
+* .boxes .back_box {
+  background-color: rgb(151, 151, 1);
+  height: 20vw;
+  width: 20vw;
+  position: relative;
+  z-index: 3;
+}/*# sourceMappingURL=boxes.css.map */

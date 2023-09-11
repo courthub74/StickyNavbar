@@ -57,25 +57,29 @@ $darkgrey: darkgrey;
     .container {
         margin: 0;
         // Top NavBar that is static
-        .nav_top_contents {
+        .the_top_nav{
             background-color: $darkblue;
-            display: flex;
-            justify-content: space-between;
-            #courdevs_top_logo {
-                width: 28vw;
-                height: 28vw;
-                margin: 0 0 0 1vw;
-            }
-            #top_hamburger {
-                width: 10vw;
-                height: 10vw;
-                margin: 4vh 8vw 0 0;
+            position: absolute;
+            top: 0;
+            .nav_top_contents {
+                display: flex;
+                justify-content: space-between;
+                #courdevs_top_logo {
+                    width: 28vw;
+                    height: 28vw;
+                    margin: 0 0 0 1vw;
+                }
+                #top_hamburger {
+                    width: 10vw;
+                    height: 10vw;
+                    margin: 4vh 8vw 0 0;
+                }
             }
         }
         // The Bottom Floating NavBar
         .the_nav {
             display: flex;
-            // justify-content: space-between;
+            // position: relative;
             background-color: $darkblue;
             height: 12vh;
             position: sticky;
@@ -83,6 +87,7 @@ $darkgrey: darkgrey;
             top: 0;
             transition: .5s ease-in-out;
             width: 100%;
+            // opacity: 0;
             .nav_contents {
                 display: flex;
                 justify-content: center;
@@ -90,6 +95,7 @@ $darkgrey: darkgrey;
                 gap: 6vw;
                 padding: 0 0 0 5vw;
                 margin: 0vh 0 0 0;
+                transition: .3s ease-in-out;
                 #coudevs_logo {
                     width: 20vw;
                     height: 20vw;
@@ -116,6 +122,7 @@ $darkgrey: darkgrey;
                     height: 10vw;
                     margin: 0 0 0 3vw;
                 }
+                // Floating NavBar reappear when scroll up
                 .you.on_scroll_up {
                     display: flex;
                     flex-direction: column;
@@ -140,6 +147,7 @@ $darkgrey: darkgrey;
                 }
             }
         }
+        // the Floating Nav at top of page dissapear
         .the_nav.dissapear {
             opacity: 0;
             transition: .3s ease-in-out;

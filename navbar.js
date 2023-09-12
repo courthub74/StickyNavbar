@@ -26,7 +26,7 @@ console.log(navbar);
 // set css class to opacity 0
 // when scroll up to opacity 1 
 
-let your_name = document.querySelector('.you');
+// let your_name = document.querySelector('.you');
 
 window.addEventListener('scroll', function () {
     // set a current scroll
@@ -42,10 +42,37 @@ window.addEventListener('scroll', function () {
         navbar.classList.remove("dissapear");
         // also change the .you class
             // make it appear
-        your_name.classList.add('on_scroll_up');
+        // your_name.classList.add('on_scroll_up');
     } 
     // NOW make the words dissapear
     lastScroll = currentScroll;
 });
 
 
+// Use Intersection Observer to make the floating navbar dissapear at
+    // the top of the screen
+
+// options library for the floating navbar
+const options = {
+    root: null, // I want it to be the viewport
+    // Or set the root to the_top_nav
+    threshold: 0, 
+    rootMargin: "100%"  // try lesser percentages as you try this
+};
+
+// observer for floating navbar
+const observer = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+            return;
+        }
+        // do the stuff BELOW
+        console.log(entry.target);
+        // entry.target.(do the things)
+    })
+}, options);
+
+// FOR FLOATING NAVBAR
+navbar.forEach(floatnav => {
+    observer.observe(floatnav);
+});

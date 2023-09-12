@@ -55,12 +55,14 @@ $darkgrey: darkgrey;
 * {
     margin: 0;
     .container {
+        background-color: $mainblue;
         margin: 0;
         // Top NavBar that is static
         .the_top_nav{
             background-color: $darkblue;
             position: absolute;
             top: 0;
+            width: 100%;
             .nav_top_contents {
                 display: flex;
                 justify-content: space-between;
@@ -81,11 +83,11 @@ $darkgrey: darkgrey;
             display: flex;
             // position: relative;
             background-color: $darkblue;
-            height: 12vh;
+            height: 13vh;
             position: sticky;
             z-index: 98;
             top: 0;
-            transition: .5s ease-in-out;
+            transition: .7s ease-in-out;
             width: 100%;
             // opacity: 0;
             .nav_contents {
@@ -94,17 +96,17 @@ $darkgrey: darkgrey;
                 align-items: center;
                 gap: 6vw;
                 padding: 0 0 0 5vw;
-                margin: 0vh 0 0 0;
+                margin: 0vh 2vw 0 0;
                 transition: .3s ease-in-out;
                 #coudevs_logo {
-                    width: 20vw;
-                    height: 20vw;
+                    width: 23vw;
+                    height: 23vw;
                 }
                 .you {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin: 0 0 0 -1vw;
+                    margin: 0 0 0 -3vw;
                     opacity: 1;
                     #name {
                         color: white;
@@ -116,11 +118,6 @@ $darkgrey: darkgrey;
                         font-size: 4vw;
                         font-family: 'Roboto', sans-serif;
                     }
-                }
-                #menu {
-                    width: 10vw;
-                    height: 10vw;
-                    margin: 0 0 0 3vw;
                 }
                 // Floating NavBar reappear when scroll up
                 .you.on_scroll_up {
@@ -141,9 +138,9 @@ $darkgrey: darkgrey;
                     }
                 }
                 #menu {
-                    width: 10vw;
-                    height: 10vw;
-                    margin: 0 0 0 3vw;
+                    width: 12vw;
+                    height: 12vw;
+                    margin: 0 0 0 0;
                 }
             }
         }
@@ -161,22 +158,22 @@ $darkgrey: darkgrey;
             justify-content: center;
             align-items: center;
             background-color: $darkblue;
-            height: 100vh;
+            height: 90vh;
             .section_one_headshot {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: -15vh 0 0 0;
+                margin: -25vh 0 0 0;
                 #home_headshot {
-                    width: 55vw;
-                    height: 55vw;
+                    width: 65vw;
+                    height: 65vw;
                     border-radius: 50%; 
                     position: absolute;  
                 }
                 .back_circle {
-                    width: 60vw;
-                    height: 60vw;
+                    width: 70vw;
+                    height: 70vw;
                     border: 7px solid $positioncolor;
                     border-radius: 50%;
                 }
@@ -200,23 +197,26 @@ $darkgrey: darkgrey;
                 }
                 .my_mantra {
                     display: flex;
-                    margin: 10vh 0 0 0;
+                    margin: 5vh 0 0 0;
                     p {
                         color: white;
                         font-family: 'Roboto', sans-serif;
-                        font-size: 4vw;
+                        font-size: 4.5vw;
                         text-align: center;
                     }
                 }
                 .learn_more {
                     width: 50vw;
                     height: 10vw;
-                    margin: 12vh 0 0 0;
+                    margin: 12vh 0 -15vh 0;
                     border-radius: 40px;
                     background-color: $portfolios;
+                    // background-color: $positioncolor;
                     border: none;
                     a {
                         color: $languagewhite;
+                        color: white;
+                        // color: $darkblue;
                         text-decoration: none;
                         font-family: 'Roboto', sans-serif;
                         font-size: 4vw;

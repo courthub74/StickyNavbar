@@ -165,15 +165,33 @@
   font-size: 4vw;
 }
 * .container .section_two {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #146166;
   height: 100vh;
 }
-* .container .section_two h1 {
-  color: #080E2F;
-  font-size: 6vw;
+* .container .section_two .section_two_top {
+  display: flex;
+}
+* .container .section_two .section_two_top .about_title {
+  font-family: "Inter", sans-serif;
+  font-size: 10vw;
+  color: white;
+  margin: 5vh 0 0 10vw;
+}
+* .container .section_two .section_two_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vh 0 0 0;
+}
+* .container .section_two .section_two_bottom .about_content {
+  width: 82%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+* .container .section_two .section_two_bottom .about_content .about_page_Logo {
+  display: flex;
+  justify-content: center;
+  margin: 4vh 0 4vh 0;
 }
 * .container .section_three {
   display: flex;

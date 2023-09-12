@@ -225,14 +225,35 @@ $darkgrey: darkgrey;
             }
         }
         .section_two {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             background-color: $skillsteal;
             height: 100vh;
-            h1 {
-                color: $darkblue;
-                font-size: 6vw;
+            .section_two_top {
+                display: flex;
+                .about_title {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 10vw;
+                    color: white;
+                    margin: 5vh 0 0 10vw;
+                }
+            }
+            .section_two_bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5vh 0 0 0;
+                .about_content {
+                    // display: flex;
+                    // flex-direction: column;
+                    width: 82%;
+                    // text-align: center;
+                    color: white;
+                    font-family: 'Roboto', sans-serif;
+                    .about_page_Logo {
+                        display: flex;
+                        justify-content: center;
+                        margin: 4vh 0 4vh 0;
+                    }
+                }
             }
         }
         .section_three {

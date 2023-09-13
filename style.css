@@ -38,7 +38,7 @@
 }
 * .container .the_nav .nav_contents {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 6vw;
   padding: 0 0 0 5vw;
@@ -153,7 +153,7 @@
   width: 50vw;
   height: 10vw;
   margin: 12vh 0 -15vh 0;
-  border-radius: 40px;
+  border-radius: 5px;
   background-color: #36395D;
   border: none;
 }
@@ -192,6 +192,20 @@
   display: flex;
   justify-content: center;
   margin: 4vh 0 4vh 0;
+}
+* .container .section_two .section_two_bottom .resume_button_div #dload_resume {
+  border: 2px solid #507E81;
+  border-radius: 5px;
+  background-color: #507E81;
+  margin: 4vh 0 0 0;
+  width: 50vw;
+  height: 10vw;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
 }
 * .container .section_three {
   display: flex;

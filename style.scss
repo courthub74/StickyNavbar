@@ -92,7 +92,7 @@ $darkgrey: darkgrey;
             // opacity: 0;
             .nav_contents {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
                 gap: 6vw;
                 padding: 0 0 0 5vw;
@@ -209,7 +209,7 @@ $darkgrey: darkgrey;
                     width: 50vw;
                     height: 10vw;
                     margin: 12vh 0 -15vh 0;
-                    border-radius: 40px;
+                    border-radius: 5px;
                     background-color: $portfolios;
                     // background-color: $positioncolor;
                     border: none;
@@ -252,6 +252,23 @@ $darkgrey: darkgrey;
                         display: flex;
                         justify-content: center;
                         margin: 4vh 0 4vh 0;
+                    }
+                }
+                // Download Resume Button
+                .resume_button_div {
+                    #dload_resume {
+                        border: 2px solid $resumebutton;
+                        border-radius: 5px;
+                        background-color: $resumebutton;
+                        margin: 4vh 0 0 0;
+                        width: 50vw;
+                        height: 10vw;
+                        color: white;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Inter', sans-serif;
                     }
                 }
             }

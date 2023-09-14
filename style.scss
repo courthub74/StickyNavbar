@@ -68,8 +68,8 @@ $darkgrey: darkgrey;
                 display: flex;
                 justify-content: space-between;
                 #courdevs_top_logo {
-                    width: 28vw;
-                    height: 28vw;
+                    width: 35vw;
+                    height: 35vw;
                     margin: 2vh 0 0 4vw;
                 }
                 #top_hamburger {
@@ -100,10 +100,10 @@ $darkgrey: darkgrey;
                 margin: 0vh 2vw 0 0;
                 transition: .3s ease-in-out;
                 width: 100%;
-                // #coudevs_logo {
-                //     width: 23vw;
-                //     height: 23vw;
-                // }
+                #coudevs_logo {
+                    width: 23vw;
+                    height: 23vw;
+                }
                 .you {
                     display: flex;
                     flex-direction: column;
@@ -172,7 +172,7 @@ $darkgrey: darkgrey;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: -25vh 0 0 0;
+                margin: -18vh 0 0 0;
                 #home_headshot {
                     width: 65vw;
                     height: 65vw;

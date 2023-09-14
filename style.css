@@ -71,7 +71,7 @@
 * .container .the_nav .nav_contents #menu {
   width: 12vw;
   height: 12vw;
-  margin: 0 7vw 0 0;
+  margin: -6vh 6vw 0 0;
 }
 * .container .the_nav .nav_contents .you.on_scroll_up {
   display: flex;

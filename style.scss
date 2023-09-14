@@ -63,7 +63,7 @@ $darkgrey: darkgrey;
             position: absolute;
             top: 0;
             width: 100%;
-            z-index: 100;
+            z-index: 98;
             .nav_top_contents {
                 display: flex;
                 justify-content: space-between;
@@ -86,7 +86,7 @@ $darkgrey: darkgrey;
             background-color: $darkblue;
             height: 13vh;
             position: sticky;
-            z-index: 98;
+            z-index: 100;
             top: 0;
             transition: .7s ease-in-out;
             width: 100%;
@@ -282,14 +282,35 @@ $darkgrey: darkgrey;
             }
         }
         .section_three {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             background-color: $darkblue;
             height: 100vh;
-            h1 {
-                color: $darkgrey;
-                font-size: 6vw;
+            .section_three_top {
+                .about_title {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 10vw;
+                    color: white;
+                    margin: 5vh 0 0 10vw;
+                }
+            }
+            .section_three_bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 8vh 0 0 0; 
+                .portfolio_squares {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5vh;
+                    justify-content: center;
+                    align-items: center;
+                    .portfolio_square {
+                        width: 80vw;
+                        height: 30vw;
+                        border: 1px solid $portfolios;
+                        border-radius: 10px;
+                        background-color: $portfolios ;
+                    }
+                }
             }
         }
         .section_four {

@@ -30,7 +30,7 @@
 * .container .the_nav {
   display: flex;
   background-color: #080E2F;
-  height: 13vh;
+  height: 20vh;
   position: sticky;
   z-index: 100;
   top: 0;

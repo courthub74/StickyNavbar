@@ -43,10 +43,16 @@ window.addEventListener('scroll', function () {
         // also change the .you class
             // make it appear
         // your_name.classList.add('on_scroll_up');
+        if (currentScroll == 0) {
+            navbar.classList.add('dissapear');
+        }
     } 
     // NOW make the words dissapear
     lastScroll = currentScroll;
 });
+
+// ADD another window event listener to set opacity
+    // back to zero when scroll is equal to zero 
 
 
 // Use Intersection Observer to make the floating navbar dissapear at

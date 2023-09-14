@@ -84,7 +84,7 @@ $darkgrey: darkgrey;
             display: flex;
             // position: relative;
             background-color: $darkblue;
-            height: 13vh;
+            height: 20vh;
             position: sticky;
             z-index: 100;
             top: 0;
@@ -160,6 +160,13 @@ $darkgrey: darkgrey;
         .the_nav.scroll_up {
             opacity: 1;
         }
+        // Try add another class for top that
+            // sets opacity to zero and moves the
+                // nav bar to the side or up or fades
+                    // which ever looks best
+        // .the_nav.top {
+        //     // 
+        // }
         .section_one {
             display: flex;
             flex-direction: column;

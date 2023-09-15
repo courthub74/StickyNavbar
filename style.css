@@ -8,88 +8,70 @@
 }
 * .container .the_top_nav {
   background-color: #080E2F;
-  position: absolute;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 98;
+  height: 15vh;
 }
 * .container .the_top_nav .nav_top_contents {
   display: flex;
   justify-content: space-between;
 }
 * .container .the_top_nav .nav_top_contents #courdevs_top_logo {
-  width: 35vw;
-  height: 35vw;
-  margin: 2vh 0 0 4vw;
+  width: 25vw;
+  height: 25vw;
+  margin: 1vh 0 0 5vw;
+}
+* .container .the_top_nav .nav_top_contents #courdevs_top_logo.dissapear {
+  opacity: 0;
+  transition: 1s all ease-out;
+}
+* .container .the_top_nav .nav_top_contents #courdevs_top_logo.appear {
+  opacity: 1;
+  transition: 1s all ease-in;
+}
+* .container .the_top_nav .nav_top_contents .you {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 5vh 5vw 0 0;
+  opacity: 0;
+}
+* .container .the_top_nav .nav_top_contents .you #name {
+  color: white;
+  font-size: 4vw;
+  font-family: "Inter", sans-serif;
+}
+* .container .the_top_nav .nav_top_contents .you #job_description {
+  color: #8081AA;
+  font-size: 3vw;
+  font-family: "Roboto", sans-serif;
+}
+* .container .the_top_nav .nav_top_contents .you.appear {
+  opacity: 1;
+  transition: 0.1s all ease-in;
 }
 * .container .the_top_nav .nav_top_contents #top_hamburger {
   width: 12vw;
   height: 12vw;
-  margin: 6.3vh 8vw 0 0;
+  margin: 4vh 8vw 0 0;
 }
-* .container .the_nav {
-  display: flex;
-  background-color: #080E2F;
-  background-color: rgb(8, 14, 47);
-  height: 18vh;
-  position: sticky;
-  z-index: 100;
-  top: 0;
-  transition: 0.7s ease-in-out;
-  width: 100%;
+* .container .the_top_nav .nav_top_contents #top_hamburger.dissapear {
+  opacity: 0;
+  transition: 1s all ease-out;
 }
-* .container .the_nav .nav_contents {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3vw;
-  padding: 0 0 0 5vw;
-  margin: 0vh 2vw 0 0;
-  transition: 0.3s ease-in-out;
-  width: 100%;
-}
-* .container .the_nav .nav_contents #coudevs_logo {
-  width: 23vw;
-  height: 23vw;
-}
-* .container .the_nav .nav_contents .you {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  margin: 0 10vw 0 0;
+* .container .the_top_nav .nav_top_contents #top_hamburger.appear {
   opacity: 1;
+  transition: 1s all ease-in;
 }
-* .container .the_nav .nav_contents .you #name {
-  color: white;
-  font-size: 5vw;
-  font-family: "Inter", sans-serif;
+* .container .the_top_nav.dissapear {
+  opacity: 0;
+  transition: 1s all ease-out;
 }
-* .container .the_nav .nav_contents .you #job_description {
-  color: #8081AA;
-  font-size: 4vw;
-  font-family: "Roboto", sans-serif;
-}
-* .container .the_nav .nav_contents #menu {
-  width: 12vw;
-  height: 12vw;
-  margin: 0vh 6vw 0 0;
-}
-* .container .the_nav .nav_contents .you.on_scroll_up {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 0 0 -1vw;
+* .container .the_top_nav.appear {
   opacity: 1;
-}
-* .container .the_nav .nav_contents .you.on_scroll_up #name {
-  color: white;
-  font-size: 5vw;
-  font-family: "Inter", sans-serif;
-}
-* .container .the_nav .nav_contents .you.on_scroll_up #job_description {
-  color: #8081AA;
-  font-size: 4vw;
-  font-family: "Roboto", sans-serif;
+  transition: 1s all ease-in;
 }
 * .container .the_nav.dissapear {
   opacity: 0;

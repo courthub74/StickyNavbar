@@ -61,99 +61,147 @@ $darkgrey: darkgrey;
         // Top NavBar that is static
         .the_top_nav{
             background-color: $darkblue;
-            position: absolute;
+            position: sticky;
             top: 0;
             width: 100%;
             z-index: 98;
+            height: 15vh;
             .nav_top_contents {
                 display: flex;
                 justify-content: space-between;
                 #courdevs_top_logo {
-                    width: 35vw;
-                    height: 35vw;
-                    margin: 2vh 0 0 4vw;
+                    width: 25vw;
+                    height: 25vw;
+                    margin: 1vh 0 0 5vw;
                 }
-                #top_hamburger {
-                    width: 12vw;
-                    height: 12vw;
-                    margin: 6.3vh 8vw 0 0;
+                #courdevs_top_logo.dissapear {
+                    opacity: 0;
+                    transition: 1s all ease-out;
                 }
-            }
-        }
-        // The Bottom Floating NavBar
-        .the_nav {
-            display: flex;
-            // position: relative;
-            background-color: $darkblue;
-            background-color: $transparentmainblue;
-            height: 18vh;
-            position: sticky;
-            z-index: 100;
-            top: 0;
-            transition: .7s ease-in-out;
-            width: 100%;
-            // opacity: 0;
-            .nav_contents {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 3vw;
-                padding: 0 0 0 5vw;
-                margin: 0vh 2vw 0 0;
-                transition: .3s ease-in-out;
-                width: 100%;
-                #coudevs_logo {
-                    width: 23vw;
-                    height: 23vw;
+                #courdevs_top_logo.appear {
+                    opacity: 1;
+                    transition: 1s all ease-in;
                 }
                 .you {
                     display: flex;
                     flex-direction: column;
                     justify-content: left;
                     // align-items: center;
-                    margin: 0 10vw 0 0;
-                    opacity: 1;
+                    margin: 5vh 5vw 0 0;
+                    opacity: 0;
                     #name {
                         color: white;
-                        font-size: 5vw;
+                        font-size: 4vw;
                         font-family: 'Inter', sans-serif;
                     }
                     #job_description {
                         color: $positioncolor;
-                        font-size: 4vw;
+                        font-size: 3vw;
                         font-family: 'Roboto', sans-serif;
                     }
                 }
-                #menu {
+                .you.appear {
+                    opacity: 1;
+                    transition: .1s all ease-in;
+                }
+                #top_hamburger {
                     width: 12vw;
                     height: 12vw;
-                    margin: 0vh 6vw 0 0;
+                    margin: 4vh 8vw 0 0;
                 }
-                // Floating NavBar reappear when scroll up
-                .you.on_scroll_up {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin: 0 0 0 -1vw;
+                #top_hamburger.dissapear {
+                    opacity: 0;
+                    transition: 1s all ease-out;
+                }
+                #top_hamburger.appear {
                     opacity: 1;
-                    #name {
-                        color: white;
-                        font-size: 5vw;
-                        font-family: 'Inter', sans-serif;
-                    }
-                    #job_description {
-                        color: $positioncolor;
-                        font-size: 4vw;
-                        font-family: 'Roboto', sans-serif;
-                    }
+                    transition: 1s all ease-in;
                 }
-                // #menu {
-                //     width: 12vw;
-                //     height: 12vw;
-                //     margin: 0 0 0 0;
-                // }
             }
         }
+        // Make it dissapear
+        .the_top_nav.dissapear {
+            opacity: 0;
+            transition: 1s all ease-out;
+        }
+        .the_top_nav.appear {
+            opacity: 1;
+            transition: 1s all ease-in;
+        }
+        // The Bottom Floating NavBar
+        // .the_nav {
+        //     display: flex;
+        //     // position: relative;
+        //     background-color: $darkblue;
+        //     background-color: $transparentmainblue;
+        //     height: 18vh;
+        //     position: sticky;
+        //     z-index: 100;
+        //     top: 0;
+        //     transition: .7s ease-in-out;
+        //     width: 100%;
+        //     // opacity: 0;
+        //     .nav_contents {
+        //         display: flex;
+        //         justify-content: space-between;
+        //         align-items: center;
+        //         gap: 3vw;
+        //         padding: 0 0 0 5vw;
+        //         margin: 0vh 2vw 0 0;
+        //         transition: .3s ease-in-out;
+        //         width: 100%;
+        //         #coudevs_logo {
+        //             width: 23vw;
+        //             height: 23vw;
+        //         }
+        //         .you {
+        //             display: flex;
+        //             flex-direction: column;
+        //             justify-content: left;
+        //             // align-items: center;
+        //             margin: 0 10vw 0 0;
+        //             opacity: 1;
+        //             #name {
+        //                 color: white;
+        //                 font-size: 5vw;
+        //                 font-family: 'Inter', sans-serif;
+        //             }
+        //             #job_description {
+        //                 color: $positioncolor;
+        //                 font-size: 4vw;
+        //                 font-family: 'Roboto', sans-serif;
+        //             }
+        //         }
+        //         #menu {
+        //             width: 12vw;
+        //             height: 12vw;
+        //             margin: 0vh 6vw 0 0;
+        //         }
+        //         // Floating NavBar reappear when scroll up
+        //         .you.on_scroll_up {
+        //             display: flex;
+        //             flex-direction: column;
+        //             align-items: center;
+        //             margin: 0 0 0 -1vw;
+        //             opacity: 1;
+        //             #name {
+        //                 color: white;
+        //                 font-size: 5vw;
+        //                 font-family: 'Inter', sans-serif;
+        //             }
+        //             #job_description {
+        //                 color: $positioncolor;
+        //                 font-size: 4vw;
+        //                 font-family: 'Roboto', sans-serif;
+        //             }
+        //         }
+        //         // #menu {
+        //         //     width: 12vw;
+        //         //     height: 12vw;
+        //         //     margin: 0 0 0 0;
+        //         // }
+        //     }
+        // }
         // the Floating Nav at top of page dissapear
         .the_nav.dissapear {
             opacity: 0;

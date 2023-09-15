@@ -14,10 +14,20 @@
 // query the nav bar
 let navbar = document.querySelector('.the_nav');
 
+// query the top-nav
+let top_navbar = document.querySelector('.the_top_nav');
+// query the top logo
+let top_logo = document.getElementById('courdevs_top_logo');
+// query the menu burger
+let menu_burger = document.getElementById('top_hamburger');
+// query the job description
+let job_description = document.querySelector('.you');
+// on home screen make it dissapear
+// on up scroll make it appear
+
 // set a last scroll
 let lastScroll = 0;
 
-console.log(navbar);
 
 // The 2 NavBars
 
@@ -34,17 +44,29 @@ window.addEventListener('scroll', function () {
     // compare current scroll to last scroll
         // then compare to greater than zero
     if (currentScroll - lastScroll > 0) {
-        navbar.classList.add('dissapear');
+        // Navbar background
+        top_navbar.classList.add('dissapear');
+        // Navbar Logo
+        top_logo.classList.add('dissapear');
+        // Menu Burger
+        menu_burger.classList.add('dissapear');
+        // Job Description
+        // job_description.classList.add('appear');
         console.log("You are Scrolling Down");
     } else {
         // scrolled up -- navbar show
-        // navbar.classList.add("scroll-up");
-        navbar.classList.remove("dissapear");
+        top_navbar.classList.remove('dissapear');
+        // top_navbar.classList.add('appear');
+        top_logo.classList.remove('dissapear');
+        // top_logo.classList.add('appear');
+        menu_burger.classList.remove('dissapear');
+        // menu_burger.classList.add('appear');
+        job_description.classList.add('appear');
         // also change the .you class
             // make it appear
-        // your_name.classList.add('on_scroll_up');
+        // This is at top of the page
         if (currentScroll == 0) {
-            navbar.classList.add('dissapear');
+            job_description.classList.remove('appear');
             // navbar.classList.add('top');
         }
     } 
@@ -59,27 +81,3 @@ window.addEventListener('scroll', function () {
 // Use Intersection Observer to make the floating navbar dissapear at
     // the top of the screen
 
-// options library for the floating navbar
-const options = {
-    root: null, // I want it to be the viewport
-    // Or set the root to the_top_nav
-    threshold: 0, 
-    rootMargin: "100%"  // try lesser percentages as you try this
-};
-
-// observer for floating navbar
-const observer = new IntersectionObserver(function(entries, observer){
-    entries.forEach(entry => {
-        if(!entry.isIntersecting) {
-            return;
-        }
-        // do the stuff BELOW
-        console.log(entry.target);
-        // entry.target.(do the things)
-    })
-}, options);
-
-// FOR FLOATING NAVBAR
-navbar.forEach(floatnav => {
-    observer.observe(floatnav);
-});

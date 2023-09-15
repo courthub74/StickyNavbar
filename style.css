@@ -30,6 +30,7 @@
 * .container .the_nav {
   display: flex;
   background-color: #080E2F;
+  background-color: rgb(8, 14, 47);
   height: 18vh;
   position: sticky;
   z-index: 100;
@@ -253,13 +254,54 @@
   margin-left: 9vw;
 }
 * .container .section_four {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #146166;
   height: 100vh;
 }
-* .container .section_four h1 {
-  color: #080E2F;
-  font-size: 6vw;
+* .container .section_four .section_four_top {
+  display: flex;
+}
+* .container .section_four .section_four_top .skills_title {
+  font-family: "Inter", sans-serif;
+  font-size: 10vw;
+  color: white;
+  margin: 5vh 0 0 10vw;
+}
+* .container .section_five {
+  background-color: #080E2F;
+  height: 100vh;
+}
+* .container .section_five .section_five_top {
+  display: flex;
+}
+* .container .section_five .section_five_top .experience_title {
+  font-family: "Inter", sans-serif;
+  font-size: 10vw;
+  color: white;
+  margin: 5vh 0 0 10vw;
+}
+* .container .section_six {
+  background-color: #146166;
+  height: 100vh;
+}
+* .container .section_six .section_six_top {
+  display: flex;
+}
+* .container .section_six .section_six_top .blog_title {
+  font-family: "Inter", sans-serif;
+  font-size: 10vw;
+  color: white;
+  margin: 5vh 0 0 10vw;
+}
+* .container .section_seven {
+  background-color: #080E2F;
+  height: 100vh;
+}
+* .container .section_seven .section_seven_top {
+  display: flex;
+}
+* .container .section_seven .section_seven_top .contact_title {
+  font-family: "Inter", sans-serif;
+  font-size: 10vw;
+  color: white;
+  margin: 5vh 0 0 10vw;
 }/*# sourceMappingURL=style.css.map */

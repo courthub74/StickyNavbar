@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap');
 // COLORS
 $mainblue: #080E2F;
+$transparentmainblue: rgba(8, 14, 47, 1);
 $skillswhite: #FFFFFF;
 $aboutgreen: #0E4946;
 $skillsteal: #146166;
@@ -84,6 +85,7 @@ $darkgrey: darkgrey;
             display: flex;
             // position: relative;
             background-color: $darkblue;
+            background-color: $transparentmainblue;
             height: 18vh;
             position: sticky;
             z-index: 100;
@@ -333,14 +335,55 @@ $darkgrey: darkgrey;
             }
         }
         .section_four {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             background-color: $skillsteal;
             height: 100vh;
-            h1 {
-                color: $darkblue;
-                font-size: 6vw;
+            .section_four_top {
+                display: flex;
+                .skills_title {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 10vw;
+                    color: white;
+                    margin: 5vh 0 0 10vw;
+                }
+            }
+        }
+        .section_five {
+            background-color: $mainblue;
+            height: 100vh;
+            .section_five_top {
+                display: flex;
+                .experience_title {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 10vw;
+                    color: white;
+                    margin: 5vh 0 0 10vw;
+                }
+            }
+        }
+        .section_six {
+            background-color: $skillsteal;
+            height: 100vh;
+            .section_six_top {
+                display: flex;
+                .blog_title {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 10vw;
+                    color: white;
+                    margin: 5vh 0 0 10vw;
+                }
+            }
+        }
+        .section_seven {
+            background-color: $mainblue;
+            height: 100vh;
+            .section_seven_top {
+                display: flex;
+                .contact_title {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 10vw;
+                    color: white;
+                    margin: 5vh 0 0 10vw;
+                }
             }
         }
     }

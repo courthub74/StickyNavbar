@@ -75,7 +75,7 @@ $darkgrey: darkgrey;
                 #top_hamburger {
                     width: 12vw;
                     height: 12vw;
-                    margin: 4vh 8vw 0 0;
+                    margin: 6.3vh 8vw 0 0;
                 }
             }
         }
@@ -84,7 +84,7 @@ $darkgrey: darkgrey;
             display: flex;
             // position: relative;
             background-color: $darkblue;
-            height: 20vh;
+            height: 18vh;
             position: sticky;
             z-index: 100;
             top: 0;
@@ -125,7 +125,7 @@ $darkgrey: darkgrey;
                 #menu {
                     width: 12vw;
                     height: 12vw;
-                    margin: -6vh 6vw 0 0;
+                    margin: 0vh 6vw 0 0;
                 }
                 // Floating NavBar reappear when scroll up
                 .you.on_scroll_up {
@@ -155,7 +155,7 @@ $darkgrey: darkgrey;
         // the Floating Nav at top of page dissapear
         .the_nav.dissapear {
             opacity: 0;
-            transition: .3s ease-in-out;
+            transition: .5s all ease-in-out;
         }
         .the_nav.scroll_up {
             opacity: 1;
@@ -164,9 +164,11 @@ $darkgrey: darkgrey;
             // sets opacity to zero and moves the
                 // nav bar to the side or up or fades
                     // which ever looks best
-        // .the_nav.top {
-        //     // 
-        // }
+        .the_nav.top {
+            // make navbar dissolve slow
+            opacity: 0;
+            transition: 1s all ease-out;
+        }
         .section_one {
             display: flex;
             flex-direction: column;
@@ -179,7 +181,7 @@ $darkgrey: darkgrey;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: -18vh 0 0 0;
+                margin: -25vh 0 0 0;
                 #home_headshot {
                     width: 65vw;
                     height: 65vw;

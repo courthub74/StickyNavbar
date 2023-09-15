@@ -45,6 +45,7 @@ window.addEventListener('scroll', function () {
         // your_name.classList.add('on_scroll_up');
         if (currentScroll == 0) {
             navbar.classList.add('dissapear');
+            // navbar.classList.add('top');
         }
     } 
     // NOW make the words dissapear

@@ -317,7 +317,17 @@ $darkgrey: darkgrey;
                         height: 30vw;
                         border: 1px solid $portfolios;
                         border-radius: 10px;
-                        background-color: $portfolios ;
+                        background-color: $portfolios;
+                        .app {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            // Move the create collab to center
+                            #create_collab {
+                                margin-left: 9vw;
+                            }
+                        }
                     }
                 }
             }

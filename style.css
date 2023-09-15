@@ -243,6 +243,15 @@
   border-radius: 10px;
   background-color: #36395D;
 }
+* .container .section_three .section_three_bottom .portfolio_squares .portfolio_square .app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+* .container .section_three .section_three_bottom .portfolio_squares .portfolio_square .app #create_collab {
+  margin-left: 9vw;
+}
 * .container .section_four {
   display: flex;
   justify-content: center;

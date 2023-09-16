@@ -67,7 +67,12 @@ window.addEventListener('scroll', function () {
         // This is at top of the page
         if (currentScroll == 0) {
             job_description.classList.remove('appear');
-            // navbar.classList.add('top');
+            // top_navbar.classList.remove('appear');
+            // top_logo.classList.remove('appear');
+            // menu_burger.classList.add('appear');
+
+
+
         }
     } 
     // NOW make the words dissapear

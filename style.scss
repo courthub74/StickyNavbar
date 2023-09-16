@@ -65,13 +65,13 @@ $darkgrey: darkgrey;
             top: 0;
             width: 100%;
             z-index: 98;
-            height: 15vh;
+            height: 14vh;
             .nav_top_contents {
                 display: flex;
                 justify-content: space-between;
                 #courdevs_top_logo {
-                    width: 25vw;
-                    height: 25vw;
+                    width: 27vw;
+                    height: 27vw;
                     margin: 1vh 0 0 5vw;
                 }
                 #courdevs_top_logo.dissapear {
@@ -87,31 +87,32 @@ $darkgrey: darkgrey;
                     flex-direction: column;
                     justify-content: left;
                     // align-items: center;
-                    margin: 5vh 5vw 0 0;
+                    margin: 5vh 3vw 0 0;
                     opacity: 0;
                     #name {
                         color: white;
-                        font-size: 4vw;
+                        font-size: 4.5vw;
                         font-family: 'Inter', sans-serif;
+                        margin: 0 0 0 .7vw;
                     }
                     #job_description {
                         color: $positioncolor;
-                        font-size: 3vw;
+                        font-size: 3.5vw;
                         font-family: 'Roboto', sans-serif;
                     }
                 }
                 .you.appear {
                     opacity: 1;
-                    transition: .1s all ease-in;
+                    transition: 1s all ease-in-out;
                 }
                 #top_hamburger {
                     width: 12vw;
                     height: 12vw;
-                    margin: 4vh 8vw 0 0;
+                    margin: 4.5vh 8vw 0 0;
                 }
                 #top_hamburger.dissapear {
                     opacity: 0;
-                    transition: 1s all ease-out;
+                    transition: .7s all ease-out;
                 }
                 #top_hamburger.appear {
                     opacity: 1;
@@ -122,11 +123,11 @@ $darkgrey: darkgrey;
         // Make it dissapear
         .the_top_nav.dissapear {
             opacity: 0;
-            transition: 1s all ease-out;
+            transition: .7s all ease-out;
         }
         .the_top_nav.appear {
             opacity: 1;
-            transition: 1s all ease-in;
+            transition: .7s all ease-in;
         }
         // The Bottom Floating NavBar
         // .the_nav {
@@ -393,6 +394,49 @@ $darkgrey: darkgrey;
                     color: white;
                     margin: 5vh 0 0 10vw;
                 }
+            }
+            .section_four_bottom {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                // Let's size the circles
+                .skill_circle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .skill_back {
+                        width: 25vw;
+                        height: 25vw;
+                        border: 2px solid $mainblue;
+                        background-color: $skillsteal;
+                        // background-color: yellow;
+                        border-radius: 50%;
+                        // position: relative;
+                    }
+                    .skill_front {
+                        width: 22vw;
+                        height: 22vw;
+                        border: 1px solid $mainblue;
+                        background-color: $mainblue;
+                        border-radius: 50%;
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                // RESPONSIVE DESIGN
+                .responsive_design_circles {
+                    display: flex;
+                }
+                .responsive_design_div {
+                    display: flex;
+                    flex-direction: column;
+                }
+                // USER INTERFACE
             }
         }
         .section_five {

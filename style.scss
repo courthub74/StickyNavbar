@@ -66,6 +66,7 @@ $darkgrey: darkgrey;
             width: 100%;
             z-index: 98;
             height: 14vh;
+            transition: 1s all ease-in-out;
             .nav_top_contents {
                 display: flex;
                 justify-content: space-between;
@@ -569,6 +570,48 @@ $darkgrey: darkgrey;
                     font-size: 10vw;
                     color: white;
                     margin: 5vh 0 0 10vw;
+                }
+            }
+            .section_six_bottom {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1vh;
+                margin: 5vh 0 0 0;
+                .blog_circle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: -1vh 0 -1vh 0;
+                    .blog_circle_back {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 52vw;
+                        height: 52vw;
+                        border: 2px solid $mainblue;
+                        background-color: $skillsteal;
+                        // background-color: yellow;
+                        border-radius: 50%;
+                    }
+                    .blog_circle_front {
+                        width: 47vw;
+                        height: 47vw;
+                        border: 1px solid $mainblue;
+                        background-color: $mainblue;
+                        border-radius: 50%;
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                .vl {
+                    border-left: 2px solid $mainblue;
+                    height: 3vh;
                 }
             }
         }

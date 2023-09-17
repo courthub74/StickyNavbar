@@ -75,7 +75,6 @@ window.addEventListener('scroll', function () {
 
         }
     } 
-    // NOW make the words dissapear
     lastScroll = currentScroll;
 });
 

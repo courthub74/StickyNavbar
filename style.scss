@@ -73,15 +73,16 @@ $darkgrey: darkgrey;
                     width: 27vw;
                     height: 27vw;
                     margin: 1vh 0 0 5vw;
+                    transition: 1s all ease-in-out;
                 }
                 #courdevs_top_logo.dissapear {
                     opacity: 0;
                     transition: 1s all ease-in-out;
                 }
-                #courdevs_top_logo.appear {
-                    opacity: 1;
-                    transition: 1s all ease-in;
-                }
+                // #courdevs_top_logo.appear {
+                //     opacity: 1;
+                //     transition: .7s all ease-in;
+                // }
                 .you {
                     display: flex;
                     flex-direction: column;
@@ -89,6 +90,7 @@ $darkgrey: darkgrey;
                     // align-items: center;
                     margin: 5vh 3vw 0 0;
                     opacity: 0;
+                    transition: 1s all ease-in-out;
                     #name {
                         color: white;
                         font-size: 4.5vw;
@@ -109,21 +111,22 @@ $darkgrey: darkgrey;
                     width: 12vw;
                     height: 12vw;
                     margin: 4.5vh 8vw 0 0;
+                    transition: 1s all ease-in-out;
                 }
                 #top_hamburger.dissapear {
                     opacity: 0;
-                    transition: .7s all ease-in-out;
+                    transition: 1s all ease-in-out;
                 }
-                #top_hamburger.appear {
-                    opacity: 1;
-                    transition: 1s all ease-in;
-                }
+                // #top_hamburger.appear {
+                //     opacity: 1;
+                //     transition: 1s all ease-in;
+                // }
             }
         }
         // Make it dissapear
         .the_top_nav.dissapear {
             opacity: 0;
-            transition: .7s all ease-out;
+            transition: 1s all ease-out;
         }
         .the_top_nav.appear {
             opacity: 1;

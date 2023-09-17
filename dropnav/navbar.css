@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+}
+* body nav {
+  background-color: darkblue;
+  color: white;
+  position: sticky;
+  height: 10vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body nav p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2em;
+}
+* body nav p.dissapearing {
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+* body nav.dissapearing {
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+* body .one {
+  background-color: antiquewhite;
+  color: darkblue;
+  height: 100vh;
+}
+* body .two {
+  background-color: darkgreen;
+  color: antiquewhite;
+  height: 100vh;
+}
+* body .three {
+  background-color: darkslategray;
+  color: aqua;
+  height: 100vh;
+}/*# sourceMappingURL=navbar.css.map */

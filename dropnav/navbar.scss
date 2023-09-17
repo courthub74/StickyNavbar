@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    body {
+        nav {
+            background-color: darkblue;
+            color: white;
+            position: sticky;
+            height: 10vh;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                font-family:'Courier New', Courier, monospace;
+                font-size: 2em;
+            }
+            p.dissapearing {
+                opacity: 0;
+                transition: 1s all ease-in-out;
+            }
+        }
+        nav.dissapearing {
+            opacity: 0;
+            transition: 1s all ease-in-out;
+        }
+        .one {
+            background-color: antiquewhite;
+            color: darkblue;
+            height: 100vh;
+        }
+        .two {
+            background-color: darkgreen;
+            color: antiquewhite;
+            height: 100vh;
+        }
+        .three {
+            background-color: darkslategray;
+            color: aqua;
+            height: 100vh;
+        }
+    }
+}

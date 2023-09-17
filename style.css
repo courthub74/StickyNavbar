@@ -25,7 +25,7 @@
 }
 * .container .the_top_nav .nav_top_contents #courdevs_top_logo.dissapear {
   opacity: 0;
-  transition: 1s all ease-out;
+  transition: 1s all ease-in-out;
 }
 * .container .the_top_nav .nav_top_contents #courdevs_top_logo.appear {
   opacity: 1;
@@ -60,7 +60,7 @@
 }
 * .container .the_top_nav .nav_top_contents #top_hamburger.dissapear {
   opacity: 0;
-  transition: 0.7s all ease-out;
+  transition: 0.7s all ease-in-out;
 }
 * .container .the_top_nav .nav_top_contents #top_hamburger.appear {
   opacity: 1;
@@ -280,12 +280,58 @@
   justify-content: center;
   align-items: center;
 }
-* .container .section_four .section_four_bottom .responsive_design_circles {
-  display: flex;
-}
 * .container .section_four .section_four_bottom .responsive_design_div {
   display: flex;
   flex-direction: column;
+}
+* .container .section_four .section_four_bottom .responsive_design_div .responsive_design_circles {
+  display: flex;
+}
+* .container .section_four .section_four_bottom .user_interface_div {
+  display: flex;
+  flex-direction: column;
+}
+* .container .section_four .section_four_bottom .user_interface_div .user_interface_circles {
+  display: flex;
+}
+* .container .section_four .section_four_bottom .scripting_div {
+  display: flex;
+  flex-direction: column;
+}
+* .container .section_four .section_four_bottom .scripting_div .scripting_circles {
+  display: flex;
+}
+* .container .section_four .section_four_bottom .backend_div {
+  display: flex;
+  flex-direction: column;
+}
+* .container .section_four .section_four_bottom .backend_div .backend_circles {
+  display: flex;
+}
+* .container .section_four .section_four_bottom .skill_circle_backend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* .container .section_four .section_four_bottom .skill_circle_backend .skill_back_backend {
+  width: 25vw;
+  height: 25vw;
+  border: 2px solid #080E2F;
+  background-color: #146166;
+  border-radius: 50%;
+}
+* .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend {
+  width: 22vw;
+  height: 22vw;
+  border: 1px solid #080E2F;
+  background-color: #080E2F;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 * .container .section_five {
   background-color: #080E2F;

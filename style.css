@@ -254,6 +254,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 3vh 0 0 0;
+  gap: 5vh;
 }
 * .container .section_four .section_four_bottom .skill_circle {
   display: flex;
@@ -280,12 +282,44 @@
   justify-content: center;
   align-items: center;
 }
+* .container .section_four .section_four_bottom .responsive_title {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.3em;
+  color: white;
+  margin: 2vh 0 0 0;
+}
+* .container .section_four .section_four_bottom .user_interface_title {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.3em;
+  color: white;
+  margin: 2vh 0 0 0;
+}
+* .container .section_four .section_four_bottom .scripting_title {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.3em;
+  color: white;
+  margin: 2vh 0 0 0;
+}
+* .container .section_four .section_four_bottom .backend_title {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.3em;
+  color: white;
+  margin: 2vh 0 0 0;
+}
+* .container .section_four .section_four_bottom .skills_underline {
+  height: 0.8vh;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.521);
+  background-color: #080E2F;
+}
 * .container .section_four .section_four_bottom .responsive_design_div {
   display: flex;
   flex-direction: column;
 }
 * .container .section_four .section_four_bottom .responsive_design_div .responsive_design_circles {
   display: flex;
+  gap: 1vw;
 }
 * .container .section_four .section_four_bottom .user_interface_div {
   display: flex;
@@ -293,6 +327,7 @@
 }
 * .container .section_four .section_four_bottom .user_interface_div .user_interface_circles {
   display: flex;
+  gap: 1vw;
 }
 * .container .section_four .section_four_bottom .scripting_div {
   display: flex;
@@ -300,6 +335,7 @@
 }
 * .container .section_four .section_four_bottom .scripting_div .scripting_circles {
   display: flex;
+  gap: 1vw;
 }
 * .container .section_four .section_four_bottom .backend_div {
   display: flex;
@@ -307,6 +343,7 @@
 }
 * .container .section_four .section_four_bottom .backend_div .backend_circles {
   display: flex;
+  gap: 1vw;
 }
 * .container .section_four .section_four_bottom .skill_circle_backend {
   display: flex;
@@ -315,15 +352,15 @@
   align-items: center;
 }
 * .container .section_four .section_four_bottom .skill_circle_backend .skill_back_backend {
-  width: 25vw;
-  height: 25vw;
+  width: 18.5vw;
+  height: 18.5vw;
   border: 2px solid #080E2F;
   background-color: #146166;
   border-radius: 50%;
 }
 * .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend {
-  width: 22vw;
-  height: 22vw;
+  width: 15.5vw;
+  height: 15.5vw;
   border: 1px solid #080E2F;
   background-color: #080E2F;
   border-radius: 50%;

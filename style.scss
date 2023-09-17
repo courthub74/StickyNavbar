@@ -400,6 +400,8 @@ $darkgrey: darkgrey;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin: 3vh 0 0 0;
+                gap: 5vh;
                 // Let's size the FRONTEND CIRCLES
                 .skill_circle {
                     display: flex;
@@ -428,12 +430,46 @@ $darkgrey: darkgrey;
                         align-items: center;
                     }
                 }
+                // Let's style the SKILL TITLES
+                .responsive_title {
+                    font-family: 'Julius Sans One', sans-serif;
+                    font-size: 1.3em;
+                    color: white;
+                    margin: 2vh 0 0 0;
+                }
+                .user_interface_title {
+                    font-family: 'Julius Sans One', sans-serif;
+                    font-size: 1.3em;
+                    color: white;
+                    margin: 2vh 0 0 0;
+                }
+                .scripting_title {
+                    font-family: 'Julius Sans One', sans-serif;
+                    font-size: 1.3em;
+                    color: white;
+                    margin: 2vh 0 0 0;
+                }
+                .backend_title {
+                    font-family: 'Julius Sans One', sans-serif;
+                    font-size: 1.3em;
+                    color: white;
+                    margin: 2vh 0 0 0;
+                }
+                // Let's size the UNDERLINES
+                .skills_underline {
+                    height: .8vh;
+                    border: none;
+                    border-radius: 5px;
+                    box-shadow: 3px 3px 5px $boxshadowcircles;
+                    background-color: $mainblue;
+                }
                 // RESPONSIVE DESIGN SECTION
                 .responsive_design_div {
                     display: flex;
                     flex-direction: column;
                     .responsive_design_circles {
                         display: flex;
+                        gap: 1vw;
                     }
                 }
                 // USER INTERFACE SECTION
@@ -442,6 +478,7 @@ $darkgrey: darkgrey;
                     flex-direction: column;
                     .user_interface_circles {
                         display: flex;
+                        gap: 1vw;
                     }
                 }
                 // SCRIPTING SECTION
@@ -450,6 +487,7 @@ $darkgrey: darkgrey;
                     flex-direction: column;
                     .scripting_circles {
                         display: flex;
+                        gap: 1vw;
                     }
                 }
                 // BACKEND SECTION
@@ -458,6 +496,7 @@ $darkgrey: darkgrey;
                     flex-direction: column;
                     .backend_circles {
                         display: flex;
+                        gap: 1vw;
                     }
                 }
                 // size the BACKEND CIRCLES
@@ -467,8 +506,8 @@ $darkgrey: darkgrey;
                     justify-content: center;
                     align-items: center;
                     .skill_back_backend {
-                        width: 25vw;
-                        height: 25vw;
+                        width: 18.5vw;
+                        height: 18.5vw;
                         border: 2px solid $mainblue;
                         background-color: $skillsteal;
                         // background-color: yellow;
@@ -476,8 +515,8 @@ $darkgrey: darkgrey;
                         // position: relative;
                     }
                     .skill_front_backend {
-                        width: 22vw;
-                        height: 22vw;
+                        width: 15.5vw;
+                        height: 15.5vw;
                         border: 1px solid $mainblue;
                         background-color: $mainblue;
                         border-radius: 50%;

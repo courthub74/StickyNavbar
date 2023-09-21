@@ -57,7 +57,7 @@ window.addEventListener('scroll', function () {
         // scrolled up -- navbar show
         top_navbar.classList.remove('dissapear');
         // top_navbar.classList.add('appear');
-        top_logo.classList.remove('dissapear');
+        // top_logo.classList.remove('dissapear');
         // top_logo.classList.add('appear');
         menu_burger.classList.remove('dissapear');
         // menu_burger.classList.add('appear');
@@ -68,11 +68,8 @@ window.addEventListener('scroll', function () {
         if (currentScroll == 0) {
             job_description.classList.remove('appear');
             // top_navbar.classList.remove('appear');
-            // top_logo.classList.remove('appear');
+            top_logo.classList.remove('dissapear');
             // menu_burger.classList.add('appear');
-
-
-
         }
     } 
     lastScroll = currentScroll;
@@ -82,6 +79,6 @@ window.addEventListener('scroll', function () {
     // back to zero when scroll is equal to zero 
 
 
-// Use Intersection Observer to make the floating navbar dissapear at
-    // the top of the screen
+// Use Intersection Observer to make the floating navbar job description dissapear at
+    // when the home page job description appears of the screen
 

@@ -71,10 +71,11 @@ $darkgrey: darkgrey;
                 display: flex;
                 justify-content: space-between;
                 #courdevs_top_logo {
-                    width: 27vw;
-                    height: 27vw;
-                    margin: 1vh 0 0 5vw;
+                    width: 35vw;
+                    height: 35vw;
+                    margin: 2vh 0 0 5vw;
                     transition: 1s all ease-in-out;
+                    // opacity: 0;
                 }
                 #courdevs_top_logo.dissapear {
                     opacity: 0;
@@ -89,18 +90,19 @@ $darkgrey: darkgrey;
                     flex-direction: column;
                     justify-content: left;
                     // align-items: center;
-                    margin: 5vh 3vw 0 0;
+                    // margin: 4.5vh 0 0 -60vw;
+                    margin: 5vh 0 0 -60vw;
                     opacity: 0;
                     transition: 1s all ease-in-out;
                     #name {
                         color: white;
-                        font-size: 4.5vw;
+                        font-size: 5vw;
                         font-family: 'Inter', sans-serif;
                         margin: 0 0 0 .7vw;
                     }
                     #job_description {
                         color: $positioncolor;
-                        font-size: 3.5vw;
+                        font-size: 4vw;
                         font-family: 'Roboto', sans-serif;
                     }
                 }
@@ -231,6 +233,13 @@ $darkgrey: darkgrey;
             align-items: center;
             background-color: $darkblue;
             height: 90vh;
+            // .home_page_logo {
+            //     margin: -70vh 0 0 -40vw;
+            //     #courdevs_top_logo {
+            //         width: 50vw;
+            //         height: 50vw;
+            //     }
+            // }
             .section_one_headshot {
                 display: flex;
                 flex-direction: column;
@@ -432,6 +441,41 @@ $darkgrey: darkgrey;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        // html / css
+                        #shield {
+                            width: 12vw;
+                            height: 12vw;
+                        }
+                        p {
+                            color: white;
+                            font-family: 'Inter', sans-serif;
+                        }
+                        // sass
+                        #sass {
+                            width: 12vw;
+                            height: 12vw;
+                        }
+                        p {
+                            color: white;
+                            font-family: 'Inter', sans-serif;
+                        }
+                        #react {
+                            width: 12vw;
+                            height: 10vw;
+                        }
+                        p {
+                            color: white;
+                            font-family: 'Inter', sans-serif;
+                        }
+                        #react_native {
+                            width: 14vw;
+                            height: 12vw;
+                        }
+                        #figma {
+                            width: 12vw;
+                            height: 10vw;
+                            font-family: 'Inter',sans-serif;
+                        }
                     }
                 }
                 // Let's style the SKILL TITLES
@@ -658,6 +702,7 @@ $darkgrey: darkgrey;
                             height: 30vh;
                             border: none;
                             border-radius: 5px;
+                            resize: none;
                         }
                     }
                     .submit_button {

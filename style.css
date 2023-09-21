@@ -20,9 +20,9 @@
   justify-content: space-between;
 }
 * .container .the_top_nav .nav_top_contents #courdevs_top_logo {
-  width: 27vw;
-  height: 27vw;
-  margin: 1vh 0 0 5vw;
+  width: 35vw;
+  height: 35vw;
+  margin: 2vh 0 0 5vw;
   transition: 1s all ease-in-out;
 }
 * .container .the_top_nav .nav_top_contents #courdevs_top_logo.dissapear {
@@ -33,19 +33,19 @@
   display: flex;
   flex-direction: column;
   justify-content: left;
-  margin: 5vh 3vw 0 0;
+  margin: 5vh 0 0 -60vw;
   opacity: 0;
   transition: 1s all ease-in-out;
 }
 * .container .the_top_nav .nav_top_contents .you #name {
   color: white;
-  font-size: 4.5vw;
+  font-size: 5vw;
   font-family: "Inter", sans-serif;
   margin: 0 0 0 0.7vw;
 }
 * .container .the_top_nav .nav_top_contents .you #job_description {
   color: #8081AA;
-  font-size: 3.5vw;
+  font-size: 4vw;
   font-family: "Roboto", sans-serif;
 }
 * .container .the_top_nav .nav_top_contents .you.appear {
@@ -278,6 +278,39 @@
   justify-content: center;
   align-items: center;
 }
+* .container .section_four .section_four_bottom .skill_circle .skill_front #shield {
+  width: 12vw;
+  height: 12vw;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front p {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #sass {
+  width: 12vw;
+  height: 12vw;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front p {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #react {
+  width: 12vw;
+  height: 10vw;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front p {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #react_native {
+  width: 14vw;
+  height: 12vw;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #figma {
+  width: 12vw;
+  height: 10vw;
+  font-family: "Inter", sans-serif;
+}
 * .container .section_four .section_four_bottom .responsive_title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 1.3em;
@@ -494,6 +527,7 @@
   height: 30vh;
   border: none;
   border-radius: 5px;
+  resize: none;
 }
 * .container .section_seven .section_seven_bottom form .submit_button {
   display: flex;

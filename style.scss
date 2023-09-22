@@ -689,6 +689,28 @@ $darkgrey: darkgrey;
                             }
                         }
                     }
+                    // SLEA
+                    .slea_logo {
+                        margin: 5vh 0 0 9vw;
+                        #slea {
+                            width: 23vw;
+                            height: 23vw;
+                        }
+                    }
+                    .slea_description {
+                        margin: 7.5vh 0 0 2.5vw;
+                        .main_description {
+                            border: none;
+                            background-color: $portfolios;
+                        h1 {
+                            color: white;
+                            font-size: 1.3em;
+                        }
+                        p {
+                            color: $jobdescription;
+                        }
+                        }
+                    }
                 }
             }
         }

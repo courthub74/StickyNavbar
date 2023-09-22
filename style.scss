@@ -17,6 +17,7 @@ $positioncolor: #8081AA;
 $learnmorebutton: #EBEBEB;
 $experiencegreenbutton: #476D6B;
 $resumebutton: #507E81;
+$jobdescription: #00C6C3;
 
 
 // DISPLAY SQAURES COLORS
@@ -644,11 +645,48 @@ $darkgrey: darkgrey;
                         height: 15vh;
                         margin: 3vh 0 0 7vw;
                     }
+                    // COURDEVELOPS
                     .courdevelops_logo {
-                        margin: 4.5vh 0 0 9vw;
+                        margin: 4.5vh 0 0 7vw;
                         #courdevelops {
                             width: 25vw;
                             height: 25vw;
+                        }
+                    }
+                    .courdevelops_description {
+                        margin: 7.5vh 0 0 2.5vw;
+                        .main_description {
+                            border: none;
+                            background-color: $portfolios;
+                            h1 {
+                                color: white;
+                                font-size: 1.3em;
+                            }
+                            p {
+                                color: $jobdescription;
+                            }
+                        }
+                    }
+                    // R1RCM
+                    .r1rcm_logo {
+                        margin: 7vh 0 0 9vw;
+                        #r1rcm {
+                            width: 23vw;
+                            height: 15vw;
+                        }
+                    }
+                    .r1rcm_description {
+                        margin: 7.5vh 0 0 2.5vw;
+                        .main_description {
+                            border: none;
+                            background-color: $portfolios;
+                            h1 {
+                                color: white;
+                                font-size: 1.3em;
+                            }
+                            p {
+                                color: $jobdescription;
+                            }
                         }
                     }
                 }

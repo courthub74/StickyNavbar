@@ -470,11 +470,46 @@
   margin: 3vh 0 0 7vw;
 }
 * .container .section_five .section_five_bottom .experience_box .courdevelops_logo {
-  margin: 4.5vh 0 0 9vw;
+  margin: 4.5vh 0 0 7vw;
 }
 * .container .section_five .section_five_bottom .experience_box .courdevelops_logo #courdevelops {
   width: 25vw;
   height: 25vw;
+}
+* .container .section_five .section_five_bottom .experience_box .courdevelops_description {
+  margin: 7.5vh 0 0 2.5vw;
+}
+* .container .section_five .section_five_bottom .experience_box .courdevelops_description .main_description {
+  border: none;
+  background-color: #36395D;
+}
+* .container .section_five .section_five_bottom .experience_box .courdevelops_description .main_description h1 {
+  color: white;
+  font-size: 1.3em;
+}
+* .container .section_five .section_five_bottom .experience_box .courdevelops_description .main_description p {
+  color: #00C6C3;
+}
+* .container .section_five .section_five_bottom .experience_box .r1rcm_logo {
+  margin: 7vh 0 0 9vw;
+}
+* .container .section_five .section_five_bottom .experience_box .r1rcm_logo #r1rcm {
+  width: 23vw;
+  height: 15vw;
+}
+* .container .section_five .section_five_bottom .experience_box .r1rcm_description {
+  margin: 7.5vh 0 0 2.5vw;
+}
+* .container .section_five .section_five_bottom .experience_box .r1rcm_description .main_description {
+  border: none;
+  background-color: #36395D;
+}
+* .container .section_five .section_five_bottom .experience_box .r1rcm_description .main_description h1 {
+  color: white;
+  font-size: 1.3em;
+}
+* .container .section_five .section_five_bottom .experience_box .r1rcm_description .main_description p {
+  color: #00C6C3;
 }
 * .container .section_six {
   background-color: #146166;

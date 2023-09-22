@@ -443,38 +443,50 @@ $darkgrey: darkgrey;
                         align-items: center;
                         // html / css
                         #shield {
-                            width: 12vw;
-                            height: 12vw;
-                        }
-                        p {
-                            color: white;
-                            font-family: 'Inter', sans-serif;
+                            width: 11vw;
+                            height: 11vw;
+                            margin: 0 0 1vh 0;
                         }
                         // sass
                         #sass {
-                            width: 12vw;
-                            height: 12vw;
-                        }
-                        p {
-                            color: white;
-                            font-family: 'Inter', sans-serif;
+                            width: 10vw;
+                            height: 10vw;
+                            margin: 0 0 1vh 0;
                         }
                         #react {
-                            width: 12vw;
+                            width: 11vw;
+                            height: 9vw;
+                            margin: 0 0 1vh 0;
+                        }
+                        #react_native {
+                            width: 13vw;
+                            height: 12vw;
+                            margin: 0 0 1vh 0;
+                        }
+                        #figma {
+                            width: 10vw;
+                            height: 9vw;
+                            margin: 0 0 1vh 0;
+                        }
+                        #javascript {
+                            width: 10vw;
                             height: 10vw;
+                            margin: 0 0 1vh 0;
+                        }
+                        #python {
+                            width: 11vw;
+                            height: 11vw;
+                            margin: 0 0 1vh 0;
+                        }
+                        #php {
+                            width: 11vw;
+                            height: 11vw;
+                            margin: 0 0 1vh 0;
                         }
                         p {
                             color: white;
                             font-family: 'Inter', sans-serif;
-                        }
-                        #react_native {
-                            width: 14vw;
-                            height: 12vw;
-                        }
-                        #figma {
-                            width: 12vw;
-                            height: 10vw;
-                            font-family: 'Inter',sans-serif;
+                            font-size: .8em;
                         }
                     }
                 }
@@ -573,6 +585,31 @@ $darkgrey: darkgrey;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        #nodejs {
+                            width: 8vw;
+                            height: 8vw;
+                            margin: 0 0 .4vh 0;
+                        }
+                        #django {
+                            width: 10vw;
+                            height: 9vw;
+                            // margin: 0 0 1vh 0;
+                        }
+                        #aws {
+                            width: 8vw;
+                            height: 8vw;
+                            margin: 0 0 .4vh 0;
+                        }
+                        #heroku {
+                            width: 8vw;
+                            height: 8vw;
+                            margin: 0 0 .4vh 0;
+                        }
+                        p {
+                            color: white;
+                            font-family: 'Inter', sans-serif;
+                            font-size: .7em;
+                        }
                     }
                 }
             }

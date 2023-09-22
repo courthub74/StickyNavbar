@@ -280,37 +280,49 @@
   align-items: center;
 }
 * .container .section_four .section_four_bottom .skill_circle .skill_front #shield {
-  width: 12vw;
-  height: 12vw;
-}
-* .container .section_four .section_four_bottom .skill_circle .skill_front p {
-  color: white;
-  font-family: "Inter", sans-serif;
+  width: 11vw;
+  height: 11vw;
+  margin: 0 0 1vh 0;
 }
 * .container .section_four .section_four_bottom .skill_circle .skill_front #sass {
-  width: 12vw;
-  height: 12vw;
-}
-* .container .section_four .section_four_bottom .skill_circle .skill_front p {
-  color: white;
-  font-family: "Inter", sans-serif;
+  width: 10vw;
+  height: 10vw;
+  margin: 0 0 1vh 0;
 }
 * .container .section_four .section_four_bottom .skill_circle .skill_front #react {
-  width: 12vw;
+  width: 11vw;
+  height: 9vw;
+  margin: 0 0 1vh 0;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #react_native {
+  width: 13vw;
+  height: 12vw;
+  margin: 0 0 1vh 0;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #figma {
+  width: 10vw;
+  height: 9vw;
+  margin: 0 0 1vh 0;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #javascript {
+  width: 10vw;
   height: 10vw;
+  margin: 0 0 1vh 0;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #python {
+  width: 11vw;
+  height: 11vw;
+  margin: 0 0 1vh 0;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #php {
+  width: 11vw;
+  height: 11vw;
+  margin: 0 0 1vh 0;
 }
 * .container .section_four .section_four_bottom .skill_circle .skill_front p {
   color: white;
   font-family: "Inter", sans-serif;
-}
-* .container .section_four .section_four_bottom .skill_circle .skill_front #react_native {
-  width: 14vw;
-  height: 12vw;
-}
-* .container .section_four .section_four_bottom .skill_circle .skill_front #figma {
-  width: 12vw;
-  height: 10vw;
-  font-family: "Inter", sans-serif;
+  font-size: 0.8em;
 }
 * .container .section_four .section_four_bottom .responsive_title {
   font-family: "Julius Sans One", sans-serif;
@@ -399,6 +411,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+* .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend #nodejs {
+  width: 8vw;
+  height: 8vw;
+  margin: 0 0 0.4vh 0;
+}
+* .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend #django {
+  width: 10vw;
+  height: 9vw;
+}
+* .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend #aws {
+  width: 8vw;
+  height: 8vw;
+  margin: 0 0 0.4vh 0;
+}
+* .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend #heroku {
+  width: 8vw;
+  height: 8vw;
+  margin: 0 0 0.4vh 0;
+}
+* .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend p {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 0.7em;
 }
 * .container .section_five {
   background-color: #080E2F;

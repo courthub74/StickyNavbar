@@ -1,0 +1,64 @@
+$mainblue: #080E2F;
+$skillsteal: #146166;
+
+* {
+    margin: 0;
+    body {
+        background-color: $skillsteal;
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            .big_button {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .b_back {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30vw;
+                    height: 30vw;
+                    border: 2px solid $mainblue;
+                    background-color: $skillsteal;
+                    border-radius: 50%;
+                    .b_front {
+                        width: 27vw;
+                        height: 27vw;
+                        border: 1px solid $mainblue;
+                        background-color: $mainblue;
+                        border-radius: 50%;
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        #python {
+                            width: 15vw;
+                            height: 15vw;
+                            transition: .5s all ease-in-out;
+                            position: absolute;
+                        }
+                        #python.dissapear {
+                            opacity: 0;
+                        }
+                        .description {
+                            opacity: 0;
+                            color: white;
+                            font-size: 3em;
+                        }
+                        .description.show {
+                            transition: .8s all ease-in;
+                            opacity: 1;
+                            color: white;
+                            font-size: 3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -68,7 +68,7 @@ window.addEventListener('scroll', function () {
         if (currentScroll == 0) {
             job_description.classList.remove('appear');
             // top_navbar.classList.remove('appear');
-            top_logo.classList.remove('dissapear');
+            // top_logo.classList.remove('dissapear');
             // menu_burger.classList.add('appear');
         }
     } 

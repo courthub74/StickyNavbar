@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+}
+* body {
+  background-color: #146166;
+}
+* body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+* body .container .big_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* body .container .big_button .b_back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vw;
+  border: 2px solid #080E2F;
+  background-color: #146166;
+  border-radius: 50%;
+}
+* body .container .big_button .b_back .b_front {
+  width: 27vw;
+  height: 27vw;
+  border: 1px solid #080E2F;
+  background-color: #080E2F;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* body .container .big_button .b_back .b_front #python {
+  width: 15vw;
+  height: 15vw;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+}
+* body .container .big_button .b_back .b_front #python.dissapear {
+  opacity: 0;
+}
+* body .container .big_button .b_back .b_front .description {
+  opacity: 0;
+  color: white;
+  font-size: 3em;
+}
+* body .container .big_button .b_back .b_front .description.show {
+  transition: 0.8s all ease-in;
+  opacity: 1;
+  color: white;
+  font-size: 3em;
+}/*# sourceMappingURL=revealbutton.css.map */

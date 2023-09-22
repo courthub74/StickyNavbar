@@ -638,6 +638,19 @@ $darkgrey: darkgrey;
                     height: 45vw;
                     border-radius: 10px;
                     background-color: $portfolios;
+                    display: flex;
+                    .vl {
+                        border-left: 2px solid white;
+                        height: 15vh;
+                        margin: 3vh 0 0 7vw;
+                    }
+                    .courdevelops_logo {
+                        margin: 4.5vh 0 0 9vw;
+                        #courdevelops {
+                            width: 25vw;
+                            height: 25vw;
+                        }
+                    }
                 }
             }
         }

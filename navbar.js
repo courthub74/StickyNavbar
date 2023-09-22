@@ -47,7 +47,7 @@ window.addEventListener('scroll', function () {
         // Navbar background
         top_navbar.classList.add('dissapear');
         // Navbar Logo
-        top_logo.classList.add('dissapear');
+        // top_logo.classList.add('dissapear');
         // Menu Burger
         menu_burger.classList.add('dissapear');
         // Job Description

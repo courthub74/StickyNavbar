@@ -1,62 +1,196 @@
 $mainblue: #080E2F;
 $skillsteal: #146166;
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap');
 * {
     margin: 0;
     body {
         background-color: $skillsteal;
-        .container {
+        .container_one {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+            // gap: 10vw;
             height: 100vh;
-            .big_button {
+            // TITLE
+            .title {
+                margin: -5vh 0 0 14vw;
+                width: 100%;
+                text-align: left;
+                h1 {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 10vw;
+                    color: white;
+                }
+            }
+            .bottom_of_page {
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                .b_back {
+                flex-direction: column;
+                gap: 10vw;
+                margin: 6vh 0 0 0;
+                // EVERY BIG BUTTON
+                .big_button {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 30vw;
-                    height: 30vw;
-                    border: 2px solid $mainblue;
-                    background-color: $skillsteal;
-                    border-radius: 50%;
-                    .b_front {
-                        width: 27vw;
-                        height: 27vw;
-                        border: 1px solid $mainblue;
-                        background-color: $mainblue;
-                        border-radius: 50%;
-                        position: absolute;
+                    .b_back {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        #python {
-                            width: 15vw;
-                            height: 15vw;
-                            transition: .5s all ease-in-out;
+                        width: 28vw;
+                        height: 28vw;
+                        border: 3px solid $mainblue;
+                        background-color: $skillsteal;
+                        border-radius: 50%;
+                        .b_front {
+                            width: 26vw;
+                            height: 26vw;
+                            border: 1px solid $mainblue;
+                            background-color: $mainblue;
+                            border-radius: 50%;
                             position: absolute;
-                        }
-                        #python.dissapear {
-                            opacity: 0;
-                        }
-                        .description {
-                            opacity: 0;
-                            color: white;
-                            font-size: 3em;
-                        }
-                        .description.show {
-                            transition: .8s all ease-in;
-                            opacity: 1;
-                            color: white;
-                            font-size: 3em;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            // EVERY LANGUAGE ICON
+                            #python {
+                                width: 15vw;
+                                height: 15vw;
+                                transition: .5s all ease-in-out;
+                                position: absolute;
+                            }
+                            #python.dissapear {
+                                opacity: 0;
+                            }
+                            #javascript {
+                                width: 12vw;
+                                height: 12vw;
+                                transition: .5s all ease-in-out;
+                                position: absolute; 
+                            }
+                            #javascript.dissapear {
+                                opacity: 0;
+                            }
+                            #nodejs {
+                                width: 14vw;
+                                height: 14vw;
+                                transition: .5s all ease-in-out;
+                                position: absolute;
+                            }
+                            #nodejs.dissapear {
+                                opacity: 0;
+                            }
+                            .shields {
+                                width: 16vw;
+                                height: 16vw;
+                                transition: .5s all ease-in-out;
+                                position: absolute;
+                            }
+                            // the shields dissapear
+                            #html.dissapear {
+                                opacity: 0;
+                            }
+                            #css.dissapear {
+                                opacity: 0;
+                            }
+                            #sass {
+                                width: 14vw;
+                                height: 14vw;
+                                transition: .5s all ease-in-out;
+                                position: absolute;
+                            }
+                            #django {
+                                width: 16vw;
+                                height: 16vw;
+                                transition: .5s all ease-in-out;
+                                position: absolute;
+                            }
+                            #django.dissapear {
+                                opacity: 0;
+                            }
+                            #aws {
+                                width: 14vw;
+                                height: 14vw;
+                                transition: .5s all ease-in-out;
+                                position: absolute;
+                            }
+                            #aws.dissapear {
+                                opacity: 0;
+                            }
+                            #heroku {
+                                width: 14vw;
+                                height: 14vw;
+                                transition: .5s all ease-in-out;
+                                position: absolute;
+                            }
+                            #heroku.dissapear {
+                                opacity: 0;
+                            }
+                            #react {
+                                width: 14vw;
+                                height: 12vw;
+                                transition: .5s all ease-in-out;
+                                position: absolute;
+                            }
+                            #react.dissapear {
+                                opacity: 0;
+                            }
+                            #native {
+                                width: 16vw;
+                                height: 16vw;
+                                transition: .5s all ease-in-out;
+                                position: absolute;
+                            }
+                            #native.dissapear {
+                                opacity: 0;
+                            }
+                            #figma {
+                                width: 14vw;
+                                height: 14vw;
+                                transition: .5s all ease-in-out;
+                                position: absolute;
+                            }
+                            // The Code titles
+                            .description {
+                                opacity: 0;
+                                color: white;
+                                font-size: 5vw;
+                            }
+                            .description.show {
+                                transition: .8s all ease-in;
+                                opacity: 1;
+                            }
                         }
                     }
+                }
+                .row_1 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2vw;
+                }
+                .row_2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2vw;
+                }
+                .row_3 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2vw;
+                }
+                .row_4 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2vw;
                 }
             }
         }

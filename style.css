@@ -251,7 +251,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3vh 0 0 0;
+  margin: 5vh 0 0 0;
   gap: 5vh;
 }
 * .container .section_four .section_four_bottom .skill_circle {
@@ -259,17 +259,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 2vh 0 1vh 0;
 }
 * .container .section_four .section_four_bottom .skill_circle .skill_back {
   width: 25vw;
   height: 25vw;
-  border: 2px solid #080E2F;
+  border: 3px solid #080E2F;
   background-color: #146166;
   border-radius: 50%;
 }
 * .container .section_four .section_four_bottom .skill_circle .skill_front {
-  width: 22vw;
-  height: 22vw;
+  width: 23vw;
+  height: 23vw;
   border: 1px solid #080E2F;
   background-color: #080E2F;
   border-radius: 50%;
@@ -318,6 +319,25 @@
   width: 13vw;
   height: 13vw;
   margin: 0 0 1vh 0;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #nodejs {
+  width: 8vw;
+  height: 8vw;
+  margin: 0 0 0.4vh 0;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #django {
+  width: 15vw;
+  height: 13vw;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #aws {
+  width: 12vw;
+  height: 12vw;
+  margin: 0 0 0.4vh 0;
+}
+* .container .section_four .section_four_bottom .skill_circle .skill_front #heroku {
+  width: 12vw;
+  height: 12vw;
+  margin: 0 0 0.4vh 0;
 }
 * .container .section_four .section_four_bottom .skill_circle .skill_front p {
   color: white;
@@ -411,25 +431,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-* .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend #nodejs {
-  width: 8vw;
-  height: 8vw;
-  margin: 0 0 0.4vh 0;
-}
-* .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend #django {
-  width: 10vw;
-  height: 9vw;
-}
-* .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend #aws {
-  width: 8vw;
-  height: 8vw;
-  margin: 0 0 0.4vh 0;
-}
-* .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend #heroku {
-  width: 8vw;
-  height: 8vw;
-  margin: 0 0 0.4vh 0;
 }
 * .container .section_four .section_four_bottom .skill_circle_backend .skill_front_backend p {
   color: white;
@@ -566,13 +567,13 @@
   align-items: center;
   width: 52vw;
   height: 52vw;
-  border: 2px solid #080E2F;
+  border: 3px solid #080E2F;
   background-color: #146166;
   border-radius: 50%;
 }
 * .container .section_six .section_six_bottom .blog_circle .blog_circle_front {
-  width: 47vw;
-  height: 47vw;
+  width: 49vw;
+  height: 49vw;
   border: 1px solid #080E2F;
   background-color: #080E2F;
   border-radius: 50%;

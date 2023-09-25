@@ -1,35 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap");
 * {
   margin: 0;
 }
 * body {
   background-color: #146166;
 }
-* body .container {
+* body .container_one {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
 }
-* body .container .big_button {
+* body .container_one .title {
+  margin: -5vh 0 0 14vw;
+  width: 100%;
+  text-align: left;
+}
+* body .container_one .title h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 10vw;
+  color: white;
+}
+* body .container_one .bottom_of_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10vw;
+  margin: 6vh 0 0 0;
+}
+* body .container_one .bottom_of_page .big_button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-* body .container .big_button .b_back {
+* body .container_one .bottom_of_page .big_button .b_back {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30vw;
-  height: 30vw;
-  border: 2px solid #080E2F;
+  width: 28vw;
+  height: 28vw;
+  border: 3px solid #080E2F;
   background-color: #146166;
   border-radius: 50%;
 }
-* body .container .big_button .b_back .b_front {
-  width: 27vw;
-  height: 27vw;
+* body .container_one .bottom_of_page .big_button .b_back .b_front {
+  width: 26vw;
+  height: 26vw;
   border: 1px solid #080E2F;
   background-color: #080E2F;
   border-radius: 50%;
@@ -39,23 +59,132 @@
   justify-content: center;
   align-items: center;
 }
-* body .container .big_button .b_back .b_front #python {
+* body .container_one .bottom_of_page .big_button .b_back .b_front #python {
   width: 15vw;
   height: 15vw;
   transition: 0.5s all ease-in-out;
   position: absolute;
 }
-* body .container .big_button .b_back .b_front #python.dissapear {
+* body .container_one .bottom_of_page .big_button .b_back .b_front #python.dissapear {
   opacity: 0;
 }
-* body .container .big_button .b_back .b_front .description {
+* body .container_one .bottom_of_page .big_button .b_back .b_front #javascript {
+  width: 12vw;
+  height: 12vw;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #javascript.dissapear {
+  opacity: 0;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #nodejs {
+  width: 14vw;
+  height: 14vw;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #nodejs.dissapear {
+  opacity: 0;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front .shields {
+  width: 16vw;
+  height: 16vw;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #html.dissapear {
+  opacity: 0;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #css.dissapear {
+  opacity: 0;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #sass {
+  width: 14vw;
+  height: 14vw;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #django {
+  width: 16vw;
+  height: 16vw;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #django.dissapear {
+  opacity: 0;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #aws {
+  width: 14vw;
+  height: 14vw;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #aws.dissapear {
+  opacity: 0;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #heroku {
+  width: 14vw;
+  height: 14vw;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #heroku.dissapear {
+  opacity: 0;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #react {
+  width: 14vw;
+  height: 12vw;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #react.dissapear {
+  opacity: 0;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #native {
+  width: 16vw;
+  height: 16vw;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #native.dissapear {
+  opacity: 0;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front #figma {
+  width: 14vw;
+  height: 14vw;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+}
+* body .container_one .bottom_of_page .big_button .b_back .b_front .description {
   opacity: 0;
   color: white;
-  font-size: 3em;
+  font-size: 5vw;
 }
-* body .container .big_button .b_back .b_front .description.show {
+* body .container_one .bottom_of_page .big_button .b_back .b_front .description.show {
   transition: 0.8s all ease-in;
   opacity: 1;
-  color: white;
-  font-size: 3em;
+}
+* body .container_one .bottom_of_page .row_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+* body .container_one .bottom_of_page .row_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+* body .container_one .bottom_of_page .row_3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+* body .container_one .bottom_of_page .row_4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
 }/*# sourceMappingURL=revealbutton.css.map */

@@ -414,7 +414,7 @@ $darkgrey: darkgrey;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: 3vh 0 0 0;
+                margin: 5vh 0 0 0;
                 gap: 5vh;
                 // Let's size the FRONTEND CIRCLES
                 .skill_circle {
@@ -422,18 +422,19 @@ $darkgrey: darkgrey;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    margin: 2vh 0 1vh 0;
                     .skill_back {
                         width: 25vw;
                         height: 25vw;
-                        border: 2px solid $mainblue;
+                        border: 3px solid $mainblue;
                         background-color: $skillsteal;
                         // background-color: yellow;
                         border-radius: 50%;
                         // position: relative;
                     }
                     .skill_front {
-                        width: 22vw;
-                        height: 22vw;
+                        width: 23vw;
+                        height: 23vw;
                         border: 1px solid $mainblue;
                         background-color: $mainblue;
                         border-radius: 50%;
@@ -483,6 +484,27 @@ $darkgrey: darkgrey;
                             width: 13vw;
                             height: 13vw;
                             margin: 0 0 1vh 0;
+                        }
+                        #nodejs {
+                            width: 8vw;
+                            height: 8vw;
+                            margin: 0 0 .4vh 0;
+                        }
+                        #django {
+                            width: 15vw;
+                            height: 13vw;
+                            // background-color: yellow;
+                            // margin: 0 0 1vh 0;
+                        }
+                        #aws {
+                            width: 12vw;
+                            height: 12vw;
+                            margin: 0 0 .4vh 0;
+                        }
+                        #heroku {
+                            width: 12vw;
+                            height: 12vw;
+                            margin: 0 0 .4vh 0;
                         }
                         p {
                             color: white;
@@ -586,26 +608,26 @@ $darkgrey: darkgrey;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        #nodejs {
-                            width: 8vw;
-                            height: 8vw;
-                            margin: 0 0 .4vh 0;
-                        }
-                        #django {
-                            width: 10vw;
-                            height: 9vw;
-                            // margin: 0 0 1vh 0;
-                        }
-                        #aws {
-                            width: 8vw;
-                            height: 8vw;
-                            margin: 0 0 .4vh 0;
-                        }
-                        #heroku {
-                            width: 8vw;
-                            height: 8vw;
-                            margin: 0 0 .4vh 0;
-                        }
+                        // #nodejs {
+                        //     width: 8vw;
+                        //     height: 8vw;
+                        //     margin: 0 0 .4vh 0;
+                        // }
+                        // #django {
+                        //     width: 10vw;
+                        //     height: 9vw;
+                        //     // margin: 0 0 1vh 0;
+                        // }
+                        // #aws {
+                        //     width: 8vw;
+                        //     height: 8vw;
+                        //     margin: 0 0 .4vh 0;
+                        // }
+                        // #heroku {
+                        //     width: 8vw;
+                        //     height: 8vw;
+                        //     margin: 0 0 .4vh 0;
+                        // }
                         p {
                             color: white;
                             font-family: 'Inter', sans-serif;
@@ -745,14 +767,14 @@ $darkgrey: darkgrey;
                         align-items: center;
                         width: 52vw;
                         height: 52vw;
-                        border: 2px solid $mainblue;
+                        border: 3px solid $mainblue;
                         background-color: $skillsteal;
                         // background-color: yellow;
                         border-radius: 50%;
                     }
                     .blog_circle_front {
-                        width: 47vw;
-                        height: 47vw;
+                        width: 49vw;
+                        height: 49vw;
                         border: 1px solid $mainblue;
                         background-color: $mainblue;
                         border-radius: 50%;

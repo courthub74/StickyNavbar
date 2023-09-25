@@ -251,8 +251,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5vh 0 0 0;
-  gap: 5vh;
+  margin: 6vh 0 0 0;
+  gap: 3vh;
 }
 * .container .section_four .section_four_bottom .skill_circle {
   display: flex;

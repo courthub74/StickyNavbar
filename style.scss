@@ -136,80 +136,6 @@ $darkgrey: darkgrey;
             opacity: 1;
             transition: .7s all ease-in;
         }
-        // The Bottom Floating NavBar
-        // .the_nav {
-        //     display: flex;
-        //     // position: relative;
-        //     background-color: $darkblue;
-        //     background-color: $transparentmainblue;
-        //     height: 18vh;
-        //     position: sticky;
-        //     z-index: 100;
-        //     top: 0;
-        //     transition: .7s ease-in-out;
-        //     width: 100%;
-        //     // opacity: 0;
-        //     .nav_contents {
-        //         display: flex;
-        //         justify-content: space-between;
-        //         align-items: center;
-        //         gap: 3vw;
-        //         padding: 0 0 0 5vw;
-        //         margin: 0vh 2vw 0 0;
-        //         transition: .3s ease-in-out;
-        //         width: 100%;
-        //         #coudevs_logo {
-        //             width: 23vw;
-        //             height: 23vw;
-        //         }
-        //         .you {
-        //             display: flex;
-        //             flex-direction: column;
-        //             justify-content: left;
-        //             // align-items: center;
-        //             margin: 0 10vw 0 0;
-        //             opacity: 1;
-        //             #name {
-        //                 color: white;
-        //                 font-size: 5vw;
-        //                 font-family: 'Inter', sans-serif;
-        //             }
-        //             #job_description {
-        //                 color: $positioncolor;
-        //                 font-size: 4vw;
-        //                 font-family: 'Roboto', sans-serif;
-        //             }
-        //         }
-        //         #menu {
-        //             width: 12vw;
-        //             height: 12vw;
-        //             margin: 0vh 6vw 0 0;
-        //         }
-        //         // Floating NavBar reappear when scroll up
-        //         .you.on_scroll_up {
-        //             display: flex;
-        //             flex-direction: column;
-        //             align-items: center;
-        //             margin: 0 0 0 -1vw;
-        //             opacity: 1;
-        //             #name {
-        //                 color: white;
-        //                 font-size: 5vw;
-        //                 font-family: 'Inter', sans-serif;
-        //             }
-        //             #job_description {
-        //                 color: $positioncolor;
-        //                 font-size: 4vw;
-        //                 font-family: 'Roboto', sans-serif;
-        //             }
-        //         }
-        //         // #menu {
-        //         //     width: 12vw;
-        //         //     height: 12vw;
-        //         //     margin: 0 0 0 0;
-        //         // }
-        //     }
-        // }
         // the Floating Nav at top of page dissapear
         .the_nav.dissapear {
             opacity: 0;
@@ -414,8 +340,8 @@ $darkgrey: darkgrey;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: 5vh 0 0 0;
-                gap: 5vh;
+                margin: 6vh 0 0 0;
+                gap: 3vh;
                 // Let's size the FRONTEND CIRCLES
                 .skill_circle {
                     display: flex;

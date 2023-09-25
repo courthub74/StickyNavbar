@@ -36,7 +36,34 @@ let lastScroll = 0;
 // set css class to opacity 0
 // when scroll up to opacity 1 
 
-// let your_name = document.querySelector('.you');
+// Write a function that makes the
+    // navbar dissapear after reappearing on scroll up
+        // and sitting idle for 5 seconds
+// function out () {
+//     console.log("It's been 5 seconds since your scroll");
+//     top_navbar.classList.add('dissapear');
+//     menu_burger.classList.add('dissapear');
+// };
+
+// function out_reverse () {
+//     console.log("You have reversed the out function");
+//     top_navbar.classList.remove('dissapear');
+//     menu_burger.classList.remove('dissapear');
+// };
+
+// Perform a setInterval when calling the function
+    // and store it in a variable
+// setInterval(out, 5000);
+
+// NOW the issue is to restart the process
+    // after you clear the setInterval at the top
+        // of the page
+
+// Let's use the boolean method used in a timer
+    // where you hit the button to stop time and
+        // resume time
+
+// FIRST start to be currentScroll = 0;
 
 window.addEventListener('scroll', function () {
     // set a current scroll
@@ -53,23 +80,34 @@ window.addEventListener('scroll', function () {
         // Job Description
         // job_description.classList.add('appear');
         console.log("You are Scrolling Down");
+        // START THE timeounav interval again
     } else {
         // scrolled up -- navbar show
         top_navbar.classList.remove('dissapear');
-        // top_navbar.classList.add('appear');
-        // top_logo.classList.remove('dissapear');
-        // top_logo.classList.add('appear');
         menu_burger.classList.remove('dissapear');
-        // menu_burger.classList.add('appear');
         job_description.classList.add('appear');
+        // Time the Navbar to dissapear again after
+            // 5 Seconds
+        setInterval(out, 5000);
+        function out () {
+            console.log("It's been 5 seconds since your scroll");
+            top_navbar.classList.add('dissapear');
+            menu_burger.classList.add('dissapear');
+        };
         // also change the .you class
             // make it appear
         // This is at top of the page
         if (currentScroll == 0) {
             job_description.classList.remove('appear');
-            // top_navbar.classList.remove('appear');
-            // top_logo.classList.remove('dissapear');
-            // menu_burger.classList.add('appear');
+            // terminate the out Interval
+            
+            // reverse out function
+            function out_reverse () {
+                console.log("You have reversed the out function");
+                top_navbar.classList.remove('dissapear');
+                menu_burger.classList.remove('dissapear');
+            };
+            out_reverse();
         }
     } 
     lastScroll = currentScroll;
